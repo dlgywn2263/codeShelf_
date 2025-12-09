@@ -16,10 +16,10 @@ namespace Main
             LoadLoginUserInfo();  // 로그인 사용자 정보 불러오기
 
             // 창 제목
-            this.Text = $"{userName}님, 환영합니다!";
+            this.Text = $"{userId}님, 환영합니다!";
 
             // 화면 중앙 문구
-            labelWelcome.Text = $"{userName}님, 환영합니다!";
+            labelWelcome.Text = $"{userId}님, 환영합니다!";
         }
 
         // ============================================================
@@ -99,7 +99,8 @@ namespace Main
 
         private void menuLogout_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            new Start().Show();
+            this.Close();
         }
 
         private void BtnHistory_Click_1(object sender, EventArgs e)

@@ -227,12 +227,8 @@ namespace Main
 
         private void 종료ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void ChargerForm_Load(object sender, EventArgs e)
-        {
-
+            new Start().Show();
+            this.Close();
         }
     }
 }

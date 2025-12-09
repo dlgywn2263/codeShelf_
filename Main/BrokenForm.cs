@@ -203,7 +203,8 @@ namespace Main
 
         private void menuLogout_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            new Start().Show();
+            this.Close();
         }
     }
 }

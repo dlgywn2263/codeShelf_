@@ -215,9 +215,22 @@ namespace Main
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void menuLogout_Click(object sender, EventArgs e)
         {
+            new Start().Show();
+            this.Close();
+        }
 
+        private void menuHistory_Click(object sender, EventArgs e)
+        {
+            new UserHistoryForm().Show();
+            this.Close();
+        }
+
+        private void menuBroken_Click(object sender, EventArgs e)
+        {
+            new BrokenForm().Show();
+            this.Close();
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Drawing;
 
 namespace Main
 {
@@ -27,7 +28,7 @@ namespace Main
                 // 1) 평균 대여 횟수 (회원당)
                 //    회원별 rental 갯수를 먼저 구해서, 그 갯수들의 평균을 냄
                 string sqlAvgRent = @"
-                    SELECT NVL(AVG(rent_cnt), 0)
+                    SELECT NVL(AVG(CAST(rent_cnt AS BINARY_DOUBLE)), 0)
                     FROM (
                         SELECT COUNT(*) AS rent_cnt
                         FROM rental
@@ -38,7 +39,13 @@ namespace Main
                 using (OracleCommand cmd = new OracleCommand(sqlAvgRent, conn))
                 {
                     object r = cmd.ExecuteScalar();
-                    double avgRent = r == DBNull.Value ? 0 : Convert.ToDouble(r);
+
+                    double avgRent = 0;
+                    if (r != DBNull.Value)
+                    {
+                        double.TryParse(r.ToString(), out avgRent);
+                    }
+
                     lblAvgRent.Text = $"평균 대여 횟수 : {Math.Round(avgRent, 1)} 회";
                 }
 
@@ -66,7 +73,7 @@ namespace Main
 
                 // 3) 평균 요금 (rental.charge_amount 사용)
                 string sqlAvgFee = @"
-                    SELECT NVL(AVG(charge_amount), 0)
+                    SELECT NVL(AVG(CAST(charge_amount AS BINARY_DOUBLE)), 0)
                     FROM rental
                     WHERE charge_amount IS NOT NULL
                 ";
@@ -74,7 +81,13 @@ namespace Main
                 using (OracleCommand cmd = new OracleCommand(sqlAvgFee, conn))
                 {
                     object r = cmd.ExecuteScalar();
-                    double avgFee = r == DBNull.Value ? 0 : Convert.ToDouble(r);
+                    
+                    double avgFee = 0;
+                    if (r != DBNull.Value)
+                    {
+                        double.TryParse(r.ToString(), out avgFee);
+                    }
+
                     lblAvgFee.Text = $"평균 요금 : {Math.Round(avgFee, 0):N0} 원";
                 }
 
@@ -120,9 +133,18 @@ namespace Main
             chartStats.Series.Clear();
             chartStats.Legends[0].Enabled = true;
 
+            // 축 색상
+            var ca = chartStats.ChartAreas[0];
+            ca.AxisX.LineColor = Color.FromArgb(80, Color.Gray);
+            ca.AxisY.LineColor = Color.FromArgb(80, Color.Gray);
+            ca.AxisX.MajorGrid.LineColor = Color.FromArgb(50, Color.LightGray);
+            ca.AxisY.MajorGrid.LineColor = Color.FromArgb(50, Color.LightGray);
+
             Series s = new Series("대여횟수");
             s.ChartType = SeriesChartType.Column;
             s.IsValueShownAsLabel = true;
+
+            s.Color = Color.LightSkyBlue;
 
             using (OracleConnection conn = DB.GetConn())
             {
@@ -145,6 +167,12 @@ namespace Main
                         s.Points.AddXY(memberId, cnt);
                     }
                 }
+            }
+
+            foreach (DataPoint p in s.Points)
+            {
+                p.Font = new Font("맑은 고딕", 12, FontStyle.Bold);
+                p.LabelForeColor = Color.Black;
             }
 
             chartStats.Series.Add(s);
@@ -176,6 +204,14 @@ namespace Main
                 s.Points.AddXY("정상", total - broken);
             }
 
+            foreach (DataPoint p in s.Points)
+            {
+                if (p.AxisLabel == "정상") p.Color = Color.LightGreen;
+                if (p.AxisLabel == "고장") p.Color = Color.LightCoral;
+                p.Font = new Font("맑은 고딕", 16, FontStyle.Bold);
+                p.LabelForeColor = Color.Black;
+            }
+
             chartStats.Series.Add(s);
         }
 
@@ -185,9 +221,17 @@ namespace Main
             chartStats.Series.Clear();
             chartStats.Legends[0].Enabled = true;
 
+            var ca = chartStats.ChartAreas[0];
+            ca.AxisX.LineColor = Color.FromArgb(80, Color.Gray);
+            ca.AxisY.LineColor = Color.FromArgb(80, Color.Gray);
+            ca.AxisX.MajorGrid.LineColor = Color.FromArgb(50, Color.LightGray);
+            ca.AxisY.MajorGrid.LineColor = Color.FromArgb(50, Color.LightGray);
+
             Series s = new Series("요금");
             s.ChartType = SeriesChartType.Column;
             s.IsValueShownAsLabel = true;
+
+            s.Color = Color.LightSkyBlue;
 
             using (OracleConnection conn = DB.GetConn())
             {
@@ -210,6 +254,12 @@ namespace Main
                         s.Points.AddXY(rentalId, amount);
                     }
                 }
+            }
+
+            foreach (DataPoint p in s.Points)
+            {
+                p.Font = new Font("맑은 고딕", 9, FontStyle.Bold);
+                p.LabelForeColor = Color.Black;
             }
 
             chartStats.Series.Add(s);
@@ -246,6 +296,14 @@ namespace Main
                         s.Points.AddXY(type, cnt);
                     }
                 }
+            }
+
+            foreach (DataPoint p in s.Points)
+            {
+                if (p.AxisLabel == "일반") p.Color = Color.LightSkyBlue;
+                if (p.AxisLabel == "고속") p.Color = Color.LightCoral;
+                p.Font = new Font("맑은 고딕", 16, FontStyle.Bold);
+                p.LabelForeColor = Color.Black;
             }
 
             chartStats.Series.Add(s);

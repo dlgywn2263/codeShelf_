@@ -62,7 +62,6 @@
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.메인화면ToolStripMenuItem,
@@ -73,50 +72,49 @@
             this.종료ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(2171, 57);
+            this.menuStrip1.Size = new System.Drawing.Size(1174, 29);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 메인화면ToolStripMenuItem
             // 
             this.메인화면ToolStripMenuItem.Name = "메인화면ToolStripMenuItem";
-            this.메인화면ToolStripMenuItem.Size = new System.Drawing.Size(168, 49);
+            this.메인화면ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
             this.메인화면ToolStripMenuItem.Text = "메인화면";
             this.메인화면ToolStripMenuItem.Click += new System.EventHandler(this.메인화면ToolStripMenuItem_Click);
             // 
             // 회원관리ToolStripMenuItem
             // 
             this.회원관리ToolStripMenuItem.Name = "회원관리ToolStripMenuItem";
-            this.회원관리ToolStripMenuItem.Size = new System.Drawing.Size(179, 49);
+            this.회원관리ToolStripMenuItem.Size = new System.Drawing.Size(92, 25);
             this.회원관리ToolStripMenuItem.Text = "회원 관리";
             this.회원관리ToolStripMenuItem.Click += new System.EventHandler(this.회원관리ToolStripMenuItem_Click);
             // 
             // 충전기관리ToolStripMenuItem
             // 
             this.충전기관리ToolStripMenuItem.Name = "충전기관리ToolStripMenuItem";
-            this.충전기관리ToolStripMenuItem.Size = new System.Drawing.Size(211, 49);
+            this.충전기관리ToolStripMenuItem.Size = new System.Drawing.Size(108, 25);
             this.충전기관리ToolStripMenuItem.Text = "충전기 관리";
             // 
             // 대여반납ToolStripMenuItem
             // 
             this.대여반납ToolStripMenuItem.Name = "대여반납ToolStripMenuItem";
-            this.대여반납ToolStripMenuItem.Size = new System.Drawing.Size(203, 49);
+            this.대여반납ToolStripMenuItem.Size = new System.Drawing.Size(104, 25);
             this.대여반납ToolStripMenuItem.Text = "대여 / 반납";
             this.대여반납ToolStripMenuItem.Click += new System.EventHandler(this.대여반납ToolStripMenuItem_Click);
             // 
             // 단가관리ToolStripMenuItem
             // 
             this.단가관리ToolStripMenuItem.Name = "단가관리ToolStripMenuItem";
-            this.단가관리ToolStripMenuItem.Size = new System.Drawing.Size(168, 49);
+            this.단가관리ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
             this.단가관리ToolStripMenuItem.Text = "단가관리";
             this.단가관리ToolStripMenuItem.Click += new System.EventHandler(this.단가관리ToolStripMenuItem_Click);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(104, 49);
-            this.종료ToolStripMenuItem.Text = "종료";
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
+            this.종료ToolStripMenuItem.Text = "로그아웃";
             this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // groupBox1
@@ -137,11 +135,9 @@
             this.groupBox1.Controls.Add(this.lblChargerId);
             this.groupBox1.Controls.Add(this.btnChargerAdd);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.Location = new System.Drawing.Point(1395, 112);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.groupBox1.Location = new System.Drawing.Point(756, 45);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox1.Size = new System.Drawing.Size(722, 836);
+            this.groupBox1.Size = new System.Drawing.Size(389, 418);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "충전기 상세 정보";
@@ -149,63 +145,55 @@
             // txtBattery
             // 
             this.txtBattery.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtBattery.Location = new System.Drawing.Point(342, 582);
-            this.txtBattery.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBattery.Location = new System.Drawing.Point(184, 291);
             this.txtBattery.Name = "txtBattery";
             this.txtBattery.ReadOnly = true;
-            this.txtBattery.Size = new System.Drawing.Size(286, 50);
+            this.txtBattery.Size = new System.Drawing.Size(156, 29);
             this.txtBattery.TabIndex = 14;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(102, 586);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(55, 293);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 45);
+            this.label3.Size = new System.Drawing.Size(68, 21);
             this.label3.TabIndex = 13;
             this.label3.Text = "배터리 :";
             // 
             // txtRateId
             // 
             this.txtRateId.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtRateId.Location = new System.Drawing.Point(342, 486);
-            this.txtRateId.Margin = new System.Windows.Forms.Padding(6);
+            this.txtRateId.Location = new System.Drawing.Point(184, 243);
             this.txtRateId.Name = "txtRateId";
-            this.txtRateId.ReadOnly = false;
-            this.txtRateId.Size = new System.Drawing.Size(286, 50);
+            this.txtRateId.Size = new System.Drawing.Size(156, 29);
             this.txtRateId.TabIndex = 12;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(102, 492);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(55, 246);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 45);
+            this.label2.Size = new System.Drawing.Size(75, 21);
             this.label2.TabIndex = 11;
             this.label2.Text = "단가 ID :";
             // 
             // txtLocationId
             // 
             this.txtLocationId.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtLocationId.Location = new System.Drawing.Point(342, 388);
-            this.txtLocationId.Margin = new System.Windows.Forms.Padding(6);
+            this.txtLocationId.Location = new System.Drawing.Point(184, 194);
             this.txtLocationId.Name = "txtLocationId";
-            this.txtLocationId.ReadOnly = false;
-            this.txtLocationId.Size = new System.Drawing.Size(286, 50);
+            this.txtLocationId.Size = new System.Drawing.Size(156, 29);
             this.txtLocationId.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(102, 396);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(55, 198);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 45);
+            this.label1.Size = new System.Drawing.Size(75, 21);
             this.label1.TabIndex = 9;
             this.label1.Text = "위치 ID :";
             // 
@@ -217,10 +205,9 @@
             this.cmbChargerType.Items.AddRange(new object[] {
             "일반",
             "고속"});
-            this.cmbChargerType.Location = new System.Drawing.Point(342, 288);
-            this.cmbChargerType.Margin = new System.Windows.Forms.Padding(6);
+            this.cmbChargerType.Location = new System.Drawing.Point(184, 144);
             this.cmbChargerType.Name = "cmbChargerType";
-            this.cmbChargerType.Size = new System.Drawing.Size(286, 53);
+            this.cmbChargerType.Size = new System.Drawing.Size(156, 29);
             this.cmbChargerType.TabIndex = 8;
             // 
             // cmbChargerStatus
@@ -232,30 +219,26 @@
             "대기",
             "사용 중",
             "고장"});
-            this.cmbChargerStatus.Location = new System.Drawing.Point(342, 188);
-            this.cmbChargerStatus.Margin = new System.Windows.Forms.Padding(6);
+            this.cmbChargerStatus.Location = new System.Drawing.Point(184, 94);
             this.cmbChargerStatus.Name = "cmbChargerStatus";
-            this.cmbChargerStatus.Size = new System.Drawing.Size(286, 53);
+            this.cmbChargerStatus.Size = new System.Drawing.Size(156, 29);
             this.cmbChargerStatus.TabIndex = 7;
             // 
             // txtChargerId
             // 
             this.txtChargerId.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtChargerId.Location = new System.Drawing.Point(342, 92);
-            this.txtChargerId.Margin = new System.Windows.Forms.Padding(6);
+            this.txtChargerId.Location = new System.Drawing.Point(184, 46);
             this.txtChargerId.Name = "txtChargerId";
-            this.txtChargerId.ReadOnly = false;
-            this.txtChargerId.Size = new System.Drawing.Size(286, 50);
+            this.txtChargerId.Size = new System.Drawing.Size(156, 29);
             this.txtChargerId.TabIndex = 6;
             // 
             // lblType
             // 
             this.lblType.AutoSize = true;
             this.lblType.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblType.Location = new System.Drawing.Point(102, 294);
-            this.lblType.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblType.Location = new System.Drawing.Point(55, 147);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(103, 45);
+            this.lblType.Size = new System.Drawing.Size(52, 21);
             this.lblType.TabIndex = 5;
             this.lblType.Text = "유형 :";
             // 
@@ -263,10 +246,9 @@
             // 
             this.btnChargerDelete.BackColor = System.Drawing.Color.LightGray;
             this.btnChargerDelete.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnChargerDelete.Location = new System.Drawing.Point(477, 696);
-            this.btnChargerDelete.Margin = new System.Windows.Forms.Padding(6);
+            this.btnChargerDelete.Location = new System.Drawing.Point(257, 348);
             this.btnChargerDelete.Name = "btnChargerDelete";
-            this.btnChargerDelete.Size = new System.Drawing.Size(208, 86);
+            this.btnChargerDelete.Size = new System.Drawing.Size(112, 43);
             this.btnChargerDelete.TabIndex = 8;
             this.btnChargerDelete.Text = "삭제";
             this.btnChargerDelete.UseVisualStyleBackColor = false;
@@ -276,10 +258,9 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblStatus.Location = new System.Drawing.Point(102, 194);
-            this.lblStatus.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblStatus.Location = new System.Drawing.Point(55, 97);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(103, 45);
+            this.lblStatus.Size = new System.Drawing.Size(52, 21);
             this.lblStatus.TabIndex = 4;
             this.lblStatus.Text = "상태 :";
             // 
@@ -287,10 +268,9 @@
             // 
             this.btnChargerUpdate.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnChargerUpdate.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnChargerUpdate.Location = new System.Drawing.Point(258, 696);
-            this.btnChargerUpdate.Margin = new System.Windows.Forms.Padding(6);
+            this.btnChargerUpdate.Location = new System.Drawing.Point(139, 348);
             this.btnChargerUpdate.Name = "btnChargerUpdate";
-            this.btnChargerUpdate.Size = new System.Drawing.Size(208, 86);
+            this.btnChargerUpdate.Size = new System.Drawing.Size(112, 43);
             this.btnChargerUpdate.TabIndex = 7;
             this.btnChargerUpdate.Text = "수정";
             this.btnChargerUpdate.UseVisualStyleBackColor = false;
@@ -300,10 +280,9 @@
             // 
             this.lblChargerId.AutoSize = true;
             this.lblChargerId.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblChargerId.Location = new System.Drawing.Point(102, 98);
-            this.lblChargerId.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblChargerId.Location = new System.Drawing.Point(55, 49);
             this.lblChargerId.Name = "lblChargerId";
-            this.lblChargerId.Size = new System.Drawing.Size(180, 45);
+            this.lblChargerId.Size = new System.Drawing.Size(91, 21);
             this.lblChargerId.TabIndex = 3;
             this.lblChargerId.Text = "충전기 ID :";
             // 
@@ -311,10 +290,9 @@
             // 
             this.btnChargerAdd.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnChargerAdd.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnChargerAdd.Location = new System.Drawing.Point(39, 696);
-            this.btnChargerAdd.Margin = new System.Windows.Forms.Padding(6);
+            this.btnChargerAdd.Location = new System.Drawing.Point(21, 348);
             this.btnChargerAdd.Name = "btnChargerAdd";
-            this.btnChargerAdd.Size = new System.Drawing.Size(208, 86);
+            this.btnChargerAdd.Size = new System.Drawing.Size(112, 43);
             this.btnChargerAdd.TabIndex = 6;
             this.btnChargerAdd.Text = "추가";
             this.btnChargerAdd.UseVisualStyleBackColor = false;
@@ -323,39 +301,35 @@
             // dgvCharger
             // 
             this.dgvCharger.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCharger.Location = new System.Drawing.Point(24, 54);
-            this.dgvCharger.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvCharger.Location = new System.Drawing.Point(13, 27);
+            this.dgvCharger.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCharger.Name = "dgvCharger";
             this.dgvCharger.RowHeadersWidth = 82;
             this.dgvCharger.RowTemplate.Height = 37;
-            this.dgvCharger.Size = new System.Drawing.Size(1251, 748);
+            this.dgvCharger.Size = new System.Drawing.Size(690, 374);
             this.dgvCharger.TabIndex = 4;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvCharger);
             this.groupBox2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox2.Location = new System.Drawing.Point(61, 112);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6);
+            this.groupBox2.Location = new System.Drawing.Point(21, 45);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox2.Size = new System.Drawing.Size(1301, 836);
+            this.groupBox2.Size = new System.Drawing.Size(718, 418);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "충전기 목록";
             // 
             // ChargerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2171, 1008);
+            this.ClientSize = new System.Drawing.Size(1174, 483);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ChargerForm";
             this.Text = "충전기관리";
-            this.Load += new System.EventHandler(this.ChargerForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

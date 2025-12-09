@@ -120,35 +120,32 @@ namespace Main
 
         private void 메인화면ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
+            new MainForm().Show();
             this.Close();
         }
 
         private void 회원관리ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MemberForm memberForm = new MemberForm();
-            memberForm.Show();
+            new MemberForm().Show();
             this.Close();
         }
 
         private void 충전기관리ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ChargerForm chargerForm = new ChargerForm();
-            chargerForm.Show();
-            this.Close();
+            new ChargerForm().Show();
+            Close();
         }
 
         private void 단가관리ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RateForm rateForm = new RateForm();
-            rateForm.Show();
-            this.Close();
+            new RateForm().Show();
+            Close();
         }
 
         private void 종료ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            new Start().Show();
+            this.Close();
         }
     }
 }

@@ -17,9 +17,9 @@ namespace Main
 
             string userId = GetLoginUserId();
             this.Text = $"{userId}님의 사용 내역입니다.";
+            title.Text = $"{userId}님의 사용 내역 입니다.";
 
             isFormLoaded = true;  // 폼 준비 완료 표시
-
             LoadHistory(); // 🔥 폼 로딩 끝난 후 안전하게 호출
         }
 
@@ -32,18 +32,26 @@ namespace Main
             cbSort.SelectedIndexChanged -= cbSort_SelectedIndexChanged;
             cbDateFilter.SelectedIndexChanged -= cbDateFilter_SelectedIndexChanged;
 
+            cbSort.Items.Clear();
             // 정렬 옵션
-            cbSort.Items.Add("최신순");
-            cbSort.Items.Add("오래된순");
-            cbSort.Items.Add("요금 높은순");
-            cbSort.Items.Add("요금 낮은순");
+            cbSort.Items.AddRange(new string[]
+            {
+                "최신순",
+                "오래된순",
+                "요금 높은순",
+                "요금 낮은순"
+            });
             cbSort.SelectedIndex = 0;
 
+            cbDateFilter.Items.Clear();
             // 기간 옵션
-            cbDateFilter.Items.Add("전체");
-            cbDateFilter.Items.Add("오늘");
-            cbDateFilter.Items.Add("이번 주");
-            cbDateFilter.Items.Add("이번 달");
+            cbDateFilter.Items.AddRange(new string[]
+            {
+                "전체",
+                "오늘",
+                "이번 주",
+                "이번 달"
+            });
             cbDateFilter.SelectedIndex = 0;
 
             // 이벤트 다시 활성화
@@ -71,18 +79,22 @@ namespace Main
                     case "오래된순":
                         orderBy = "ORDER BY r.rental_id ASC";
                         break;
+
                     case "요금 높은순":
                         orderBy = "ORDER BY r.charge_amount DESC";
                         break;
+
                     case "요금 낮은순":
-                        orderBy = "ORDER_BY r.charge_amount ASC";
+                        orderBy = "ORDER BY r.charge_amount ASC";
                         break;
                 }
 
                 // 🔥 기간 필터링 조건
                 string dateFilter = "";
                 DateTime today = DateTime.Today;
-                DateTime weekStart = today.AddDays(-(int)today.DayOfWeek + 1); // 월요일 시작
+
+                int diff = today.DayOfWeek == DayOfWeek.Sunday ? 6 : (int)today.DayOfWeek - 1;
+                DateTime weekStart = today.AddDays(-diff);
                 DateTime monthStart = new DateTime(today.Year, today.Month, 1);
 
                 switch (cbDateFilter.SelectedItem?.ToString())
@@ -92,17 +104,15 @@ namespace Main
                         break;
 
                     case "이번 주":
-                        dateFilter = $@"
-                            AND r.rental_time >= TO_DATE('{weekStart:yyyy-MM-dd}', 'YYYY-MM-DD')
-                            AND r.rental_time <  TO_DATE('{weekStart.AddDays(7):yyyy-MM-dd}', 'YYYY-MM-DD')
-                        ";
+                        dateFilter =
+                            $" AND r.rental_time >= TO_DATE('{weekStart:yyyy-MM-dd}', 'YYYY-MM-DD') " +
+                            $" AND r.rental_time < TO_DATE('{weekStart.AddDays(7):yyyy-MM-dd}', 'YYYY-MM-DD') ";
                         break;
 
                     case "이번 달":
-                        dateFilter = $@"
-                            AND r.rental_time >= TO_DATE('{monthStart:yyyy-MM-dd}', 'YYYY-MM-DD')
-                            AND r.rental_time <  ADD_MONTHS(TO_DATE('{monthStart:yyyy-MM-dd}', 'YYYY-MM-DD'), 1)
-                        ";
+                        dateFilter =
+                            $" AND r.rental_time >= TO_DATE('{monthStart:yyyy-MM-dd}', 'YYYY-MM-DD') " +
+                            $" AND r.rental_time < ADD_MONTHS(TO_DATE('{monthStart:yyyy-MM-dd}', 'YYYY-MM-DD'), 1) ";
                         break;
                 }
 
@@ -165,9 +175,10 @@ namespace Main
             using (OracleConnection conn = DB.GetConn())
             {
                 conn.Open();
-                string sql = "SELECT id FROM member WHERE member_id = :mid";
 
+                string sql = "SELECT id FROM member WHERE member_id = :mid";
                 OracleCommand cmd = new OracleCommand(sql, conn);
+
                 cmd.Parameters.Add(":mid", UserSession.MemberId);
 
                 object result = cmd.ExecuteScalar();
@@ -192,7 +203,8 @@ namespace Main
 
         private void menuLogout_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            new Start().Show();
+            this.Close();
         }
 
         private void btnSearch_Click_1(object sender, EventArgs e)

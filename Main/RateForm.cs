@@ -280,12 +280,14 @@ namespace Main
 
         private void 종료ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            new Start().Show();
+            this.Close();
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+        private void 충전기관리ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new ChargerForm().Show();
+            Close();
         }
     }
 }

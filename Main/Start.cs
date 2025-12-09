@@ -14,6 +14,7 @@ namespace Main
         // ============================================================
         //  로그인 버튼
         // ============================================================
+
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             string id = txtId.Text.Trim();
@@ -116,6 +117,29 @@ namespace Main
             pw.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtId_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtPw.Focus();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void txtPw_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                BtnLogin_Click(sender, e);
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 
     // ==============================
@@ -127,4 +151,5 @@ namespace Main
         public string Role { get; set; }
         public string Status { get; set; }
     }
+
 }

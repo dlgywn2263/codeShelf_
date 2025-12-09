@@ -50,11 +50,9 @@
             this.groupBox1.Controls.Add(this.BtnReturn);
             this.groupBox1.Controls.Add(this.BtnRent);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.Location = new System.Drawing.Point(119, 292);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.groupBox1.Location = new System.Drawing.Point(65, 125);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox1.Size = new System.Drawing.Size(1346, 736);
+            this.groupBox1.Size = new System.Drawing.Size(725, 368);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "사용자 기능 메뉴";
@@ -62,10 +60,9 @@
             // BtnHistory
             // 
             this.BtnHistory.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnHistory.Location = new System.Drawing.Point(735, 384);
-            this.BtnHistory.Margin = new System.Windows.Forms.Padding(6);
+            this.BtnHistory.Location = new System.Drawing.Point(396, 192);
             this.BtnHistory.Name = "BtnHistory";
-            this.BtnHistory.Size = new System.Drawing.Size(401, 238);
+            this.BtnHistory.Size = new System.Drawing.Size(216, 119);
             this.BtnHistory.TabIndex = 4;
             this.BtnHistory.Text = "사용내역";
             this.BtnHistory.UseVisualStyleBackColor = true;
@@ -74,10 +71,9 @@
             // BtnBroken
             // 
             this.BtnBroken.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnBroken.Location = new System.Drawing.Point(163, 384);
-            this.BtnBroken.Margin = new System.Windows.Forms.Padding(6);
+            this.BtnBroken.Location = new System.Drawing.Point(88, 192);
             this.BtnBroken.Name = "BtnBroken";
-            this.BtnBroken.Size = new System.Drawing.Size(401, 238);
+            this.BtnBroken.Size = new System.Drawing.Size(216, 119);
             this.BtnBroken.TabIndex = 2;
             this.BtnBroken.Text = "고장신고";
             this.BtnBroken.UseVisualStyleBackColor = true;
@@ -86,10 +82,9 @@
             // BtnReturn
             // 
             this.BtnReturn.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnReturn.Location = new System.Drawing.Point(735, 88);
-            this.BtnReturn.Margin = new System.Windows.Forms.Padding(6);
+            this.BtnReturn.Location = new System.Drawing.Point(396, 44);
             this.BtnReturn.Name = "BtnReturn";
-            this.BtnReturn.Size = new System.Drawing.Size(401, 238);
+            this.BtnReturn.Size = new System.Drawing.Size(216, 119);
             this.BtnReturn.TabIndex = 1;
             this.BtnReturn.Text = "반납";
             this.BtnReturn.UseVisualStyleBackColor = true;
@@ -98,10 +93,9 @@
             // BtnRent
             // 
             this.BtnRent.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnRent.Location = new System.Drawing.Point(163, 92);
-            this.BtnRent.Margin = new System.Windows.Forms.Padding(6);
+            this.BtnRent.Location = new System.Drawing.Point(88, 46);
             this.BtnRent.Name = "BtnRent";
-            this.BtnRent.Size = new System.Drawing.Size(401, 238);
+            this.BtnRent.Size = new System.Drawing.Size(216, 119);
             this.BtnRent.TabIndex = 0;
             this.BtnRent.Text = "대여";
             this.BtnRent.UseVisualStyleBackColor = true;
@@ -110,7 +104,6 @@
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuMain,
@@ -119,35 +112,34 @@
             this.menuLogout});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1569, 57);
+            this.menuStrip1.Size = new System.Drawing.Size(845, 29);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuMain
             // 
             this.menuMain.Name = "menuMain";
-            this.menuMain.Size = new System.Drawing.Size(168, 49);
+            this.menuMain.Size = new System.Drawing.Size(86, 25);
             this.menuMain.Text = "메인화면";
             // 
             // menuBroken
             // 
             this.menuBroken.Name = "menuBroken";
-            this.menuBroken.Size = new System.Drawing.Size(168, 49);
+            this.menuBroken.Size = new System.Drawing.Size(86, 25);
             this.menuBroken.Text = "고장신고";
             this.menuBroken.Click += new System.EventHandler(this.menuBroken_Click);
             // 
             // menuHistory
             // 
             this.menuHistory.Name = "menuHistory";
-            this.menuHistory.Size = new System.Drawing.Size(168, 49);
+            this.menuHistory.Size = new System.Drawing.Size(86, 25);
             this.menuHistory.Text = "사용내역";
             this.menuHistory.Click += new System.EventHandler(this.menuHistory_Click);
             // 
             // menuLogout
             // 
             this.menuLogout.Name = "menuLogout";
-            this.menuLogout.Size = new System.Drawing.Size(168, 49);
+            this.menuLogout.Size = new System.Drawing.Size(86, 25);
             this.menuLogout.Text = "로그아웃";
             this.menuLogout.Click += new System.EventHandler(this.menuLogout_Click);
             // 
@@ -155,23 +147,21 @@
             // 
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.labelWelcome.Location = new System.Drawing.Point(550, 142);
-            this.labelWelcome.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelWelcome.Location = new System.Drawing.Point(296, 71);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(506, 65);
+            this.labelWelcome.Size = new System.Drawing.Size(252, 32);
             this.labelWelcome.TabIndex = 8;
             this.labelWelcome.Text = "사용자님, 환영합니다!";
             // 
             // UserMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1569, 1147);
+            this.ClientSize = new System.Drawing.Size(845, 530);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "UserMainForm";
             this.Text = "사용자메인화면";
             this.groupBox1.ResumeLayout(false);

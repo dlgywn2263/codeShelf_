@@ -100,8 +100,8 @@ namespace Main
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            Start start = new Start();
-            start.Show();
+            Start s = new Start();
+            s.Show();
             this.Close();
         }
 
@@ -115,11 +115,6 @@ namespace Main
         }
 
     
-
-        private void txtId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtPhone_TextChanged_1(object sender, EventArgs e)
         {

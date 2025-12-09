@@ -114,7 +114,8 @@ namespace Main
 
         private void 종료ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            new Start().Show();
+            this.Close();
         }
 
         private void btnGoBroken_Click(object sender, EventArgs e)
@@ -122,8 +123,6 @@ namespace Main
             new BrokenManageForm().Show();
             Close();
         }
-
-        
 
         private void btnGoLocation_Click(object sender, EventArgs e)
         {

@@ -262,6 +262,7 @@ namespace Main
 
         private void menuLogout_Click(object sender, EventArgs e)
         {
+            new Start().Show();
             this.Close();
         }
     }

@@ -131,8 +131,8 @@
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(54, 25);
-            this.종료ToolStripMenuItem.Text = "종료";
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
+            this.종료ToolStripMenuItem.Text = "로그아웃";
             this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // groupBox4
@@ -248,7 +248,7 @@
             this.flowPanelChargers.Location = new System.Drawing.Point(16, 33);
             this.flowPanelChargers.Margin = new System.Windows.Forms.Padding(0);
             this.flowPanelChargers.Name = "flowPanelChargers";
-            this.flowPanelChargers.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.flowPanelChargers.Padding = new System.Windows.Forms.Padding(10);
             this.flowPanelChargers.Size = new System.Drawing.Size(481, 434);
             this.flowPanelChargers.TabIndex = 2;
             // 

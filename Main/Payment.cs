@@ -26,10 +26,6 @@ namespace Main
             price.Text = payment.ToString() + "원";        // 금액
         }
 
-
-
-
-
         private void btnPay_Click_1(object sender, EventArgs e)
         {
             IsConfirmed = true;

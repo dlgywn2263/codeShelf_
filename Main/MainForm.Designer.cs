@@ -56,7 +56,6 @@
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.메인화면ToolStripMenuItem,
@@ -67,50 +66,49 @@
             this.종료ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1010, 57);
+            this.menuStrip1.Size = new System.Drawing.Size(588, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 메인화면ToolStripMenuItem
             // 
             this.메인화면ToolStripMenuItem.Name = "메인화면ToolStripMenuItem";
-            this.메인화면ToolStripMenuItem.Size = new System.Drawing.Size(168, 49);
+            this.메인화면ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
             this.메인화면ToolStripMenuItem.Text = "메인화면";
             // 
             // 회원관리ToolStripMenuItem
             // 
             this.회원관리ToolStripMenuItem.Name = "회원관리ToolStripMenuItem";
-            this.회원관리ToolStripMenuItem.Size = new System.Drawing.Size(179, 49);
+            this.회원관리ToolStripMenuItem.Size = new System.Drawing.Size(92, 25);
             this.회원관리ToolStripMenuItem.Text = "회원 관리";
             this.회원관리ToolStripMenuItem.Click += new System.EventHandler(this.회원관리ToolStripMenuItem_Click);
             // 
             // 충전기관리ToolStripMenuItem
             // 
             this.충전기관리ToolStripMenuItem.Name = "충전기관리ToolStripMenuItem";
-            this.충전기관리ToolStripMenuItem.Size = new System.Drawing.Size(211, 49);
+            this.충전기관리ToolStripMenuItem.Size = new System.Drawing.Size(108, 25);
             this.충전기관리ToolStripMenuItem.Text = "충전기 관리";
             this.충전기관리ToolStripMenuItem.Click += new System.EventHandler(this.충전기관리ToolStripMenuItem_Click);
             // 
             // 대여반납ToolStripMenuItem
             // 
             this.대여반납ToolStripMenuItem.Name = "대여반납ToolStripMenuItem";
-            this.대여반납ToolStripMenuItem.Size = new System.Drawing.Size(203, 49);
+            this.대여반납ToolStripMenuItem.Size = new System.Drawing.Size(104, 25);
             this.대여반납ToolStripMenuItem.Text = "대여 / 반납";
             this.대여반납ToolStripMenuItem.Click += new System.EventHandler(this.대여반납ToolStripMenuItem_Click);
             // 
             // 단가관리ToolStripMenuItem
             // 
             this.단가관리ToolStripMenuItem.Name = "단가관리ToolStripMenuItem";
-            this.단가관리ToolStripMenuItem.Size = new System.Drawing.Size(168, 49);
+            this.단가관리ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
             this.단가관리ToolStripMenuItem.Text = "단가관리";
             this.단가관리ToolStripMenuItem.Click += new System.EventHandler(this.단가관리ToolStripMenuItem_Click);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(104, 49);
-            this.종료ToolStripMenuItem.Text = "종료";
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
+            this.종료ToolStripMenuItem.Text = "로그아웃";
             this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // groupBox1
@@ -122,11 +120,9 @@
             this.groupBox1.Controls.Add(this.lblBroken);
             this.groupBox1.Controls.Add(this.lblUsing);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.Location = new System.Drawing.Point(87, 110);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(70, 55);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.groupBox1.Size = new System.Drawing.Size(832, 316);
+            this.groupBox1.Size = new System.Drawing.Size(448, 158);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "현황 요약";
@@ -135,10 +131,9 @@
             // 
             this.lblDueToday.AutoSize = true;
             this.lblDueToday.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblDueToday.Location = new System.Drawing.Point(425, 216);
-            this.lblDueToday.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblDueToday.Location = new System.Drawing.Point(229, 108);
             this.lblDueToday.Name = "lblDueToday";
-            this.lblDueToday.Size = new System.Drawing.Size(385, 51);
+            this.lblDueToday.Size = new System.Drawing.Size(195, 25);
             this.lblDueToday.TabIndex = 3;
             this.lblDueToday.Text = "- 오늘 반납 예정: 4건";
             // 
@@ -146,10 +141,9 @@
             // 
             this.lblWait.AutoSize = true;
             this.lblWait.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblWait.Location = new System.Drawing.Point(39, 220);
-            this.lblWait.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblWait.Location = new System.Drawing.Point(21, 110);
             this.lblWait.Name = "lblWait";
-            this.lblWait.Size = new System.Drawing.Size(258, 51);
+            this.lblWait.Size = new System.Drawing.Size(131, 25);
             this.lblWait.TabIndex = 4;
             this.lblWait.Text = "- 대기 중: 7대";
             // 
@@ -157,10 +151,9 @@
             // 
             this.lblLate.AutoSize = true;
             this.lblLate.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblLate.Location = new System.Drawing.Point(425, 146);
-            this.lblLate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblLate.Location = new System.Drawing.Point(229, 73);
             this.lblLate.Name = "lblLate";
-            this.lblLate.Size = new System.Drawing.Size(258, 51);
+            this.lblLate.Size = new System.Drawing.Size(131, 25);
             this.lblLate.TabIndex = 2;
             this.lblLate.Text = "- 연체 중: 1건";
             // 
@@ -168,10 +161,9 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblTotal.Location = new System.Drawing.Point(39, 78);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblTotal.Location = new System.Drawing.Point(21, 39);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(355, 51);
+            this.lblTotal.Size = new System.Drawing.Size(179, 25);
             this.lblTotal.TabIndex = 2;
             this.lblTotal.Text = "- 전체 충전기: 15대";
             // 
@@ -179,10 +171,9 @@
             // 
             this.lblBroken.AutoSize = true;
             this.lblBroken.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblBroken.Location = new System.Drawing.Point(425, 78);
-            this.lblBroken.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblBroken.Location = new System.Drawing.Point(229, 39);
             this.lblBroken.Name = "lblBroken";
-            this.lblBroken.Size = new System.Drawing.Size(296, 51);
+            this.lblBroken.Size = new System.Drawing.Size(150, 25);
             this.lblBroken.TabIndex = 1;
             this.lblBroken.Text = "- 고장 신고: 3건";
             // 
@@ -190,10 +181,9 @@
             // 
             this.lblUsing.AutoSize = true;
             this.lblUsing.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblUsing.Location = new System.Drawing.Point(39, 148);
-            this.lblUsing.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblUsing.Location = new System.Drawing.Point(21, 74);
             this.lblUsing.Name = "lblUsing";
-            this.lblUsing.Size = new System.Drawing.Size(245, 51);
+            this.lblUsing.Size = new System.Drawing.Size(124, 25);
             this.lblUsing.TabIndex = 0;
             this.lblUsing.Text = "- 사용중: 3대";
             // 
@@ -204,11 +194,9 @@
             this.groupBox2.Controls.Add(this.btnStats);
             this.groupBox2.Controls.Add(this.btnLocation);
             this.groupBox2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox2.Location = new System.Drawing.Point(87, 596);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Location = new System.Drawing.Point(70, 298);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.groupBox2.Size = new System.Drawing.Size(832, 534);
+            this.groupBox2.Size = new System.Drawing.Size(448, 267);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "빠른 이동 메뉴";
@@ -217,10 +205,9 @@
             // 
             this.btnSettlement.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSettlement.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnSettlement.Location = new System.Drawing.Point(435, 298);
-            this.btnSettlement.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnSettlement.Location = new System.Drawing.Point(234, 149);
             this.btnSettlement.Name = "btnSettlement";
-            this.btnSettlement.Size = new System.Drawing.Size(347, 158);
+            this.btnSettlement.Size = new System.Drawing.Size(187, 79);
             this.btnSettlement.TabIndex = 4;
             this.btnSettlement.Text = "정산 관리";
             this.btnSettlement.UseCompatibleTextRendering = true;
@@ -231,10 +218,9 @@
             // 
             this.btnBrokenManage.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnBrokenManage.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnBrokenManage.Location = new System.Drawing.Point(46, 96);
-            this.btnBrokenManage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnBrokenManage.Location = new System.Drawing.Point(25, 48);
             this.btnBrokenManage.Name = "btnBrokenManage";
-            this.btnBrokenManage.Size = new System.Drawing.Size(347, 158);
+            this.btnBrokenManage.Size = new System.Drawing.Size(187, 79);
             this.btnBrokenManage.TabIndex = 3;
             this.btnBrokenManage.Text = "고장신고 관리";
             this.btnBrokenManage.UseVisualStyleBackColor = false;
@@ -244,10 +230,9 @@
             // 
             this.btnStats.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnStats.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnStats.Location = new System.Drawing.Point(435, 96);
-            this.btnStats.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnStats.Location = new System.Drawing.Point(234, 48);
             this.btnStats.Name = "btnStats";
-            this.btnStats.Size = new System.Drawing.Size(347, 158);
+            this.btnStats.Size = new System.Drawing.Size(187, 79);
             this.btnStats.TabIndex = 2;
             this.btnStats.Text = "통계 관리";
             this.btnStats.UseVisualStyleBackColor = false;
@@ -257,10 +242,9 @@
             // 
             this.btnLocation.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnLocation.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnLocation.Location = new System.Drawing.Point(46, 298);
-            this.btnLocation.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLocation.Location = new System.Drawing.Point(25, 149);
             this.btnLocation.Name = "btnLocation";
-            this.btnLocation.Size = new System.Drawing.Size(347, 158);
+            this.btnLocation.Size = new System.Drawing.Size(187, 79);
             this.btnLocation.TabIndex = 1;
             this.btnLocation.Text = "위치 관리";
             this.btnLocation.UseCompatibleTextRendering = true;
@@ -271,10 +255,9 @@
             // 
             this.btnReload.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnReload.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnReload.Location = new System.Drawing.Point(683, 460);
-            this.btnReload.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnReload.Location = new System.Drawing.Point(391, 230);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(236, 96);
+            this.btnReload.Size = new System.Drawing.Size(127, 48);
             this.btnReload.TabIndex = 3;
             this.btnReload.Text = "새로고침";
             this.btnReload.UseVisualStyleBackColor = false;
@@ -282,15 +265,14 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 1222);
+            this.ClientSize = new System.Drawing.Size(588, 598);
             this.Controls.Add(this.btnReload);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "MainForm";
             this.Text = "관리자메인화면";
             this.menuStrip1.ResumeLayout(false);
