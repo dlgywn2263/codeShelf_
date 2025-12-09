@@ -1,0 +1,374 @@
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\Main.exe.config
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\Main.exe
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\Main.pdb
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\Oracle.DataAccess.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Buffers.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Formats.Asn1.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Memory.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Text.Json.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.ValueTuple.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Buffers.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Formats.Asn1.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Memory.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Text.Json.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\bin\Debug\System.ValueTuple.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.ChargerForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.MemberForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.Properties.Resources.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.RateForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.RentalForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.csproj.Up2Date
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.exe
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.pdb
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.BrokenForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.MainForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.SignupForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.Start.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.UserHistoryForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.UserMainForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.UserRentalForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행2\Main\obj\Debug\Main.UserReturnForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\Main.exe.config
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\Main.exe
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\Main.pdb
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\Oracle.DataAccess.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Buffers.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Formats.Asn1.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Memory.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Text.Json.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.ValueTuple.dll
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Buffers.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Formats.Asn1.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Memory.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Text.Json.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\bin\Debug\System.ValueTuple.xml
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.BrokenForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.ChargerForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.MainForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.MemberForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.Properties.Resources.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.RateForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.RentalForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.SignupForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.Start.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.UserHistoryForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.UserMainForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.UserRentalForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.UserReturnForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.csproj.Up2Date
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.exe
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.pdb
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.StatsForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.BrokenManageForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\진행\Main\obj\Debug\Main.LocationForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\Main.exe.config
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\Main.exe
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\Main.pdb
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\Oracle.DataAccess.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Buffers.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Formats.Asn1.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Memory.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Text.Json.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.ValueTuple.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Buffers.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Formats.Asn1.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Memory.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Text.Json.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\bin\Debug\System.ValueTuple.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.exe.config
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.BrokenForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.BrokenManageForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.ChargerForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.LocationForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.MainForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.MemberForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.Properties.Resources.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.RateForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.RentalForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.SignupForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.Start.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.StatsForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.UserHistoryForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.UserMainForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.UserRentalForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.UserReturnForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.csproj.GenerateResource.cache
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.csproj.Up2Date
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.exe
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\수정3\Main\obj\Debug\Main.pdb
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\Main.exe.config
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\Main.exe
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\Main.pdb
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\Oracle.DataAccess.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Buffers.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Formats.Asn1.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Memory.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Text.Json.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.ValueTuple.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Buffers.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Formats.Asn1.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Memory.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Text.Json.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\bin\Debug\System.ValueTuple.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.exe.config
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.BrokenForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.BrokenManageForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.ChargerForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.LocationForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.MainForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.MemberForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.Properties.Resources.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.RateForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.RentalForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.SignupForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.Start.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.StatsForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.UserHistoryForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.UserMainForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.UserRentalForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.UserReturnForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.csproj.GenerateResource.cache
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.csproj.Up2Date
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.exe
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\1\수정3\Main\obj\Debug\Main.pdb
+D:\C#_codeShelf\수정3\Main\bin\Debug\Main.exe.config
+D:\C#_codeShelf\수정3\Main\bin\Debug\Main.exe
+D:\C#_codeShelf\수정3\Main\bin\Debug\Main.pdb
+D:\C#_codeShelf\수정3\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\Oracle.DataAccess.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Buffers.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Formats.Asn1.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Memory.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Numerics.Vectors.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Text.Encodings.Web.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Text.Json.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.ValueTuple.dll
+D:\C#_codeShelf\수정3\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Buffers.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Formats.Asn1.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Memory.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Numerics.Vectors.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Text.Encodings.Web.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Text.Json.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\C#_codeShelf\수정3\Main\bin\Debug\System.ValueTuple.xml
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.BrokenForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.BrokenManageForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.ChargerForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.LocationForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.MainForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.MemberForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.Properties.Resources.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.RateForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.RentalForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.SignupForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.Start.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.StatsForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.UserHistoryForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.UserMainForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.UserRentalForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.UserReturnForm.resources
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.csproj.GenerateResource.cache
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.csproj.Up2Date
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.exe
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.pdb
+D:\C#_codeShelf\수정3\Main\obj\Debug\Main.exe.config
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.BrokenForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.BrokenManageForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.ChargerForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.LocationForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.MainForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.MemberForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.Properties.Resources.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.RateForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.RentalForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.SignupForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.Start.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.StatsForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.UserHistoryForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.UserMainForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.UserRentalForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.UserReturnForm.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.exe
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.pdb
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.Passwd.resources
+C:\Users\user\OneDrive\바탕 화면\대학교\연계팀플\수정3\Main\obj\Debug\Main.Payment.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\Main.exe.config
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\Main.exe
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\Main.pdb
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\Oracle.DataAccess.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Buffers.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Formats.Asn1.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Memory.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Text.Json.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.ValueTuple.dll
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Buffers.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Formats.Asn1.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Memory.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Text.Json.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\bin\Debug\System.ValueTuple.xml
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.exe.config
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.BrokenForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.BrokenManageForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.ChargerForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.LocationForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.MainForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.MemberForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.Passwd.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.Payment.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.Properties.Resources.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.RateForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.RentalForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.SettlementForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.SignupForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.Start.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.StatsForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.UserHistoryForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.UserMainForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.UserRentalForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.UserReturnForm.resources
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.csproj.GenerateResource.cache
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.csproj.Up2Date
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.exe
+C:\Users\3988l\OneDrive\문서\카카오톡 받은 파일\관리자쪽 수정\Main\obj\Debug\Main.pdb
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\Main.exe.config
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\Main.exe
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\Main.pdb
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\Oracle.DataAccess.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Buffers.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Formats.Asn1.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Memory.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Numerics.Vectors.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Text.Encodings.Web.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Text.Json.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.ValueTuple.dll
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Buffers.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Formats.Asn1.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Memory.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Numerics.Vectors.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Text.Encodings.Web.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Text.Json.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\bin\Debug\System.ValueTuple.xml
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.exe.config
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.BrokenForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.BrokenManageForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.ChargerForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.LocationForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.MainForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.MemberForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.Passwd.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.Payment.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.Properties.Resources.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.RateForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.RentalForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.SettlementForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.SignupForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.Start.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.StatsForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.UserHistoryForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.UserMainForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.UserRentalForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.UserReturnForm.resources
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.csproj.GenerateResource.cache
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.csproj.Up2Date
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.exe
+D:\C#_codeShelf\관리자쪽 수정\Main\obj\Debug\Main.pdb
