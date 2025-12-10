@@ -61,11 +61,11 @@
             // 
             this.groupBox3.Controls.Add(this.dgvLocation);
             this.groupBox3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox3.Location = new System.Drawing.Point(41, 140);
+            this.groupBox3.Location = new System.Drawing.Point(29, 21);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
-            this.groupBox3.Size = new System.Drawing.Size(2219, 1524);
+            this.groupBox3.Size = new System.Drawing.Size(1328, 950);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "충전기 목록";
@@ -73,12 +73,12 @@
             // dgvLocation
             // 
             this.dgvLocation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLocation.Location = new System.Drawing.Point(56, 112);
+            this.dgvLocation.Location = new System.Drawing.Point(49, 74);
             this.dgvLocation.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.dgvLocation.Name = "dgvLocation";
             this.dgvLocation.RowHeadersWidth = 82;
             this.dgvLocation.RowTemplate.Height = 23;
-            this.dgvLocation.Size = new System.Drawing.Size(2089, 1304);
+            this.dgvLocation.Size = new System.Drawing.Size(1232, 830);
             this.dgvLocation.TabIndex = 0;
             this.dgvLocation.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLocation_CellClick);
             // 
@@ -92,11 +92,11 @@
             this.groupBox2.Controls.Add(this.btnAdd);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox2.Location = new System.Drawing.Point(2322, 214);
+            this.groupBox2.Location = new System.Drawing.Point(1379, 95);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
-            this.groupBox2.Size = new System.Drawing.Size(885, 733);
+            this.groupBox2.Size = new System.Drawing.Size(802, 589);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "위치 상세";
@@ -107,7 +107,7 @@
             this.txtLocationName.Location = new System.Drawing.Point(316, 272);
             this.txtLocationName.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.txtLocationName.Name = "txtLocationName";
-            this.txtLocationName.Size = new System.Drawing.Size(368, 50);
+            this.txtLocationName.Size = new System.Drawing.Size(417, 50);
             this.txtLocationName.TabIndex = 8;
             // 
             // label3
@@ -127,17 +127,17 @@
             this.txtChargerId.Location = new System.Drawing.Point(316, 167);
             this.txtChargerId.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.txtChargerId.Name = "txtChargerId";
-            this.txtChargerId.Size = new System.Drawing.Size(368, 50);
+            this.txtChargerId.Size = new System.Drawing.Size(417, 50);
             this.txtChargerId.TabIndex = 5;
             // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.LightGray;
             this.btnDelete.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDelete.Location = new System.Drawing.Point(590, 505);
+            this.btnDelete.Location = new System.Drawing.Point(546, 375);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(188, 94);
+            this.btnDelete.Size = new System.Drawing.Size(210, 112);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "삭제";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -147,10 +147,10 @@
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnUpdate.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnUpdate.Location = new System.Drawing.Point(342, 505);
+            this.btnUpdate.Location = new System.Drawing.Point(298, 375);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(188, 94);
+            this.btnUpdate.Size = new System.Drawing.Size(210, 112);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "수정";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -160,10 +160,10 @@
             // 
             this.btnAdd.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnAdd.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnAdd.Location = new System.Drawing.Point(94, 505);
+            this.btnAdd.Location = new System.Drawing.Point(50, 375);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(188, 94);
+            this.btnAdd.Size = new System.Drawing.Size(210, 112);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "등록";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -185,12 +185,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(2884, 1759);
+            this.ClientSize = new System.Drawing.Size(2244, 1036);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnBack);
             this.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.Name = "LocationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "위치관리";
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLocation)).EndInit();

@@ -80,6 +80,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.메인화면ToolStripMenuItem,
@@ -90,48 +91,49 @@
             this.종료ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(927, 29);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
+            this.menuStrip1.Size = new System.Drawing.Size(1722, 57);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 메인화면ToolStripMenuItem
             // 
             this.메인화면ToolStripMenuItem.Name = "메인화면ToolStripMenuItem";
-            this.메인화면ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
+            this.메인화면ToolStripMenuItem.Size = new System.Drawing.Size(168, 49);
             this.메인화면ToolStripMenuItem.Text = "메인화면";
             this.메인화면ToolStripMenuItem.Click += new System.EventHandler(this.메인화면ToolStripMenuItem_Click);
             // 
             // 회원관리ToolStripMenuItem
             // 
             this.회원관리ToolStripMenuItem.Name = "회원관리ToolStripMenuItem";
-            this.회원관리ToolStripMenuItem.Size = new System.Drawing.Size(92, 25);
+            this.회원관리ToolStripMenuItem.Size = new System.Drawing.Size(179, 49);
             this.회원관리ToolStripMenuItem.Text = "회원 관리";
             this.회원관리ToolStripMenuItem.Click += new System.EventHandler(this.회원관리ToolStripMenuItem_Click);
             // 
             // 충전기관리ToolStripMenuItem
             // 
             this.충전기관리ToolStripMenuItem.Name = "충전기관리ToolStripMenuItem";
-            this.충전기관리ToolStripMenuItem.Size = new System.Drawing.Size(108, 25);
+            this.충전기관리ToolStripMenuItem.Size = new System.Drawing.Size(211, 49);
             this.충전기관리ToolStripMenuItem.Text = "충전기 관리";
             this.충전기관리ToolStripMenuItem.Click += new System.EventHandler(this.충전기관리ToolStripMenuItem_Click);
             // 
             // 대여반납ToolStripMenuItem
             // 
             this.대여반납ToolStripMenuItem.Name = "대여반납ToolStripMenuItem";
-            this.대여반납ToolStripMenuItem.Size = new System.Drawing.Size(104, 25);
+            this.대여반납ToolStripMenuItem.Size = new System.Drawing.Size(203, 49);
             this.대여반납ToolStripMenuItem.Text = "대여 / 반납";
             // 
             // 단가관리ToolStripMenuItem
             // 
             this.단가관리ToolStripMenuItem.Name = "단가관리ToolStripMenuItem";
-            this.단가관리ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
+            this.단가관리ToolStripMenuItem.Size = new System.Drawing.Size(168, 49);
             this.단가관리ToolStripMenuItem.Text = "단가관리";
             this.단가관리ToolStripMenuItem.Click += new System.EventHandler(this.단가관리ToolStripMenuItem_Click);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(168, 49);
             this.종료ToolStripMenuItem.Text = "로그아웃";
             this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
@@ -146,9 +148,11 @@
             this.groupBox4.Controls.Add(this.panelUsing);
             this.groupBox4.Controls.Add(this.panelReady);
             this.groupBox4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox4.Location = new System.Drawing.Point(587, 161);
+            this.groupBox4.Location = new System.Drawing.Point(1090, 322);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(305, 244);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox4.Size = new System.Drawing.Size(566, 488);
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "상태 현황";
@@ -157,27 +161,30 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label21.Location = new System.Drawing.Point(128, 135);
+            this.label21.Location = new System.Drawing.Point(238, 270);
+            this.label21.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(146, 16);
+            this.label21.Size = new System.Drawing.Size(287, 32);
             this.label21.TabIndex = 8;
             this.label21.Text = "배터리 잔량 : 0 %";
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.LightCoral;
-            this.panel6.Location = new System.Drawing.Point(42, 124);
+            this.panel6.Location = new System.Drawing.Point(78, 248);
+            this.panel6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(30, 30);
+            this.panel6.Size = new System.Drawing.Size(56, 60);
             this.panel6.TabIndex = 7;
             // 
             // lblUsing
             // 
             this.lblUsing.AutoSize = true;
             this.lblUsing.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblUsing.Location = new System.Drawing.Point(128, 92);
+            this.lblUsing.Location = new System.Drawing.Point(238, 184);
+            this.lblUsing.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblUsing.Name = "lblUsing";
-            this.lblUsing.Size = new System.Drawing.Size(108, 16);
+            this.lblUsing.Size = new System.Drawing.Size(213, 32);
             this.lblUsing.TabIndex = 6;
             this.lblUsing.Text = "사용중 : 0 대";
             // 
@@ -185,9 +192,10 @@
             // 
             this.lblBroken.AutoSize = true;
             this.lblBroken.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblBroken.Location = new System.Drawing.Point(129, 177);
+            this.lblBroken.Location = new System.Drawing.Point(240, 354);
+            this.lblBroken.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblBroken.Name = "lblBroken";
-            this.lblBroken.Size = new System.Drawing.Size(91, 16);
+            this.lblBroken.Size = new System.Drawing.Size(180, 32);
             this.lblBroken.TabIndex = 5;
             this.lblBroken.Text = "고장 : 0 대";
             // 
@@ -195,43 +203,49 @@
             // 
             this.lblReady.AutoSize = true;
             this.lblReady.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblReady.Location = new System.Drawing.Point(129, 54);
+            this.lblReady.Location = new System.Drawing.Point(240, 108);
+            this.lblReady.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblReady.Name = "lblReady";
-            this.lblReady.Size = new System.Drawing.Size(91, 16);
+            this.lblReady.Size = new System.Drawing.Size(180, 32);
             this.lblReady.TabIndex = 3;
             this.lblReady.Text = "대기 : 0 대";
             // 
             // panelBroken
             // 
             this.panelBroken.BackColor = System.Drawing.Color.DarkGray;
-            this.panelBroken.Location = new System.Drawing.Point(42, 166);
+            this.panelBroken.Location = new System.Drawing.Point(78, 332);
+            this.panelBroken.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelBroken.Name = "panelBroken";
-            this.panelBroken.Size = new System.Drawing.Size(30, 30);
+            this.panelBroken.Size = new System.Drawing.Size(56, 60);
             this.panelBroken.TabIndex = 2;
             // 
             // panelUsing
             // 
             this.panelUsing.BackColor = System.Drawing.Color.LightGreen;
-            this.panelUsing.Location = new System.Drawing.Point(42, 81);
+            this.panelUsing.Location = new System.Drawing.Point(78, 162);
+            this.panelUsing.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelUsing.Name = "panelUsing";
-            this.panelUsing.Size = new System.Drawing.Size(30, 30);
+            this.panelUsing.Size = new System.Drawing.Size(56, 60);
             this.panelUsing.TabIndex = 1;
             // 
             // panelReady
             // 
             this.panelReady.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
-            this.panelReady.Location = new System.Drawing.Point(42, 43);
+            this.panelReady.Location = new System.Drawing.Point(78, 86);
+            this.panelReady.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelReady.Name = "panelReady";
-            this.panelReady.Size = new System.Drawing.Size(30, 30);
+            this.panelReady.Size = new System.Drawing.Size(56, 60);
             this.panelReady.TabIndex = 0;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.flowPanelChargers);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.Location = new System.Drawing.Point(38, 59);
+            this.groupBox1.Location = new System.Drawing.Point(71, 118);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(519, 499);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Size = new System.Drawing.Size(964, 998);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "충전기  상태 목록";
@@ -245,11 +259,11 @@
             this.flowPanelChargers.Controls.Add(this.panel3);
             this.flowPanelChargers.Controls.Add(this.panel4);
             this.flowPanelChargers.Controls.Add(this.panel5);
-            this.flowPanelChargers.Location = new System.Drawing.Point(16, 33);
+            this.flowPanelChargers.Location = new System.Drawing.Point(30, 66);
             this.flowPanelChargers.Margin = new System.Windows.Forms.Padding(0);
             this.flowPanelChargers.Name = "flowPanelChargers";
-            this.flowPanelChargers.Padding = new System.Windows.Forms.Padding(10);
-            this.flowPanelChargers.Size = new System.Drawing.Size(481, 434);
+            this.flowPanelChargers.Padding = new System.Windows.Forms.Padding(19, 20, 19, 20);
+            this.flowPanelChargers.Size = new System.Drawing.Size(893, 868);
             this.flowPanelChargers.TabIndex = 2;
             // 
             // panel2
@@ -258,35 +272,39 @@
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(13, 13);
+            this.panel2.Location = new System.Drawing.Point(25, 26);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(146, 97);
+            this.panel2.Size = new System.Drawing.Size(271, 194);
             this.panel2.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 56);
+            this.label8.Location = new System.Drawing.Point(24, 112);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 21);
+            this.label8.Size = new System.Drawing.Size(156, 45);
             this.label8.TabIndex = 4;
             this.label8.Text = "배터리 :  ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 35);
+            this.label7.Location = new System.Drawing.Point(24, 70);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 21);
+            this.label7.Size = new System.Drawing.Size(124, 45);
             this.label7.TabIndex = 3;
             this.label7.Text = "종류 :  ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 14);
+            this.label6.Location = new System.Drawing.Point(24, 28);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 21);
+            this.label6.Size = new System.Drawing.Size(188, 45);
             this.label6.TabIndex = 2;
             this.label6.Text = "충전기 ID : ";
             // 
@@ -296,35 +314,39 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Location = new System.Drawing.Point(165, 13);
+            this.panel1.Location = new System.Drawing.Point(308, 26);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(148, 97);
+            this.panel1.Size = new System.Drawing.Size(275, 194);
             this.panel1.TabIndex = 5;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 56);
+            this.label9.Location = new System.Drawing.Point(24, 112);
+            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 21);
+            this.label9.Size = new System.Drawing.Size(156, 45);
             this.label9.TabIndex = 4;
             this.label9.Text = "배터리 :  ";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(13, 35);
+            this.label10.Location = new System.Drawing.Point(24, 70);
+            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 21);
+            this.label10.Size = new System.Drawing.Size(124, 45);
             this.label10.TabIndex = 3;
             this.label10.Text = "종류 :  ";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(13, 14);
+            this.label11.Location = new System.Drawing.Point(24, 28);
+            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 21);
+            this.label11.Size = new System.Drawing.Size(188, 45);
             this.label11.TabIndex = 2;
             this.label11.Text = "충전기 ID : ";
             // 
@@ -334,35 +356,39 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Location = new System.Drawing.Point(319, 13);
+            this.panel3.Location = new System.Drawing.Point(595, 26);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(146, 97);
+            this.panel3.Size = new System.Drawing.Size(271, 194);
             this.panel3.TabIndex = 5;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 56);
+            this.label12.Location = new System.Drawing.Point(24, 112);
+            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 21);
+            this.label12.Size = new System.Drawing.Size(156, 45);
             this.label12.TabIndex = 4;
             this.label12.Text = "배터리 :  ";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 35);
+            this.label13.Location = new System.Drawing.Point(24, 70);
+            this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 21);
+            this.label13.Size = new System.Drawing.Size(124, 45);
             this.label13.TabIndex = 3;
             this.label13.Text = "종류 :  ";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 14);
+            this.label14.Location = new System.Drawing.Point(24, 28);
+            this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(95, 21);
+            this.label14.Size = new System.Drawing.Size(188, 45);
             this.label14.TabIndex = 2;
             this.label14.Text = "충전기 ID : ";
             // 
@@ -372,35 +398,39 @@
             this.panel4.Controls.Add(this.label15);
             this.panel4.Controls.Add(this.label16);
             this.panel4.Controls.Add(this.label17);
-            this.panel4.Location = new System.Drawing.Point(13, 116);
+            this.panel4.Location = new System.Drawing.Point(25, 232);
+            this.panel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(148, 97);
+            this.panel4.Size = new System.Drawing.Size(275, 194);
             this.panel4.TabIndex = 6;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(13, 56);
+            this.label15.Location = new System.Drawing.Point(24, 112);
+            this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(80, 21);
+            this.label15.Size = new System.Drawing.Size(156, 45);
             this.label15.TabIndex = 4;
             this.label15.Text = "배터리 :  ";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(13, 35);
+            this.label16.Location = new System.Drawing.Point(24, 70);
+            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(64, 21);
+            this.label16.Size = new System.Drawing.Size(124, 45);
             this.label16.TabIndex = 3;
             this.label16.Text = "종류 :  ";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(13, 14);
+            this.label17.Location = new System.Drawing.Point(24, 28);
+            this.label17.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(95, 21);
+            this.label17.Size = new System.Drawing.Size(188, 45);
             this.label17.TabIndex = 2;
             this.label17.Text = "충전기 ID : ";
             // 
@@ -410,47 +440,53 @@
             this.panel5.Controls.Add(this.label18);
             this.panel5.Controls.Add(this.label19);
             this.panel5.Controls.Add(this.label20);
-            this.panel5.Location = new System.Drawing.Point(167, 116);
+            this.panel5.Location = new System.Drawing.Point(312, 232);
+            this.panel5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(146, 97);
+            this.panel5.Size = new System.Drawing.Size(271, 194);
             this.panel5.TabIndex = 6;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(13, 56);
+            this.label18.Location = new System.Drawing.Point(24, 112);
+            this.label18.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(80, 21);
+            this.label18.Size = new System.Drawing.Size(156, 45);
             this.label18.TabIndex = 4;
             this.label18.Text = "배터리 :  ";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(13, 35);
+            this.label19.Location = new System.Drawing.Point(24, 70);
+            this.label19.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(64, 21);
+            this.label19.Size = new System.Drawing.Size(124, 45);
             this.label19.TabIndex = 3;
             this.label19.Text = "종류 :  ";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(13, 14);
+            this.label20.Location = new System.Drawing.Point(24, 28);
+            this.label20.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(95, 21);
+            this.label20.Size = new System.Drawing.Size(188, 45);
             this.label20.TabIndex = 2;
             this.label20.Text = "충전기 ID : ";
             // 
             // RentalForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 589);
+            this.ClientSize = new System.Drawing.Size(1722, 1178);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.menuStrip1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "RentalForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "대여반납관리";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

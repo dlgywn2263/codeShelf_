@@ -55,9 +55,11 @@
             this.groupBox1.Controls.Add(this.LblTime);
             this.groupBox1.Controls.Add(this.LblType);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.Location = new System.Drawing.Point(65, 53);
+            this.groupBox1.Location = new System.Drawing.Point(121, 106);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(734, 370);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Size = new System.Drawing.Size(1363, 740);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "충전기 대여하기";
@@ -65,19 +67,21 @@
             // TxtPrice
             // 
             this.TxtPrice.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.TxtPrice.Location = new System.Drawing.Point(333, 180);
+            this.TxtPrice.Location = new System.Drawing.Point(618, 360);
+            this.TxtPrice.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.ReadOnly = true;
-            this.TxtPrice.Size = new System.Drawing.Size(246, 35);
+            this.TxtPrice.Size = new System.Drawing.Size(453, 63);
             this.TxtPrice.TabIndex = 6;
             // 
             // LblPrice
             // 
             this.LblPrice.AutoSize = true;
             this.LblPrice.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LblPrice.Location = new System.Drawing.Point(147, 183);
+            this.LblPrice.Location = new System.Drawing.Point(273, 366);
+            this.LblPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LblPrice.Name = "LblPrice";
-            this.LblPrice.Size = new System.Drawing.Size(123, 30);
+            this.LblPrice.Size = new System.Drawing.Size(249, 57);
             this.LblPrice.TabIndex = 5;
             this.LblPrice.Text = "기본 요금 : ";
             // 
@@ -85,9 +89,10 @@
             // 
             this.ComboTime.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ComboTime.FormattingEnabled = true;
-            this.ComboTime.Location = new System.Drawing.Point(333, 121);
+            this.ComboTime.Location = new System.Drawing.Point(618, 242);
+            this.ComboTime.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ComboTime.Name = "ComboTime";
-            this.ComboTime.Size = new System.Drawing.Size(246, 38);
+            this.ComboTime.Size = new System.Drawing.Size(453, 65);
             this.ComboTime.TabIndex = 4;
             this.ComboTime.SelectedIndexChanged += new System.EventHandler(this.ComboTime_SelectedIndexChanged);
             // 
@@ -95,9 +100,10 @@
             // 
             this.BtnRentDo.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BtnRentDo.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnRentDo.Location = new System.Drawing.Point(271, 252);
+            this.BtnRentDo.Location = new System.Drawing.Point(503, 504);
+            this.BtnRentDo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnRentDo.Name = "BtnRentDo";
-            this.BtnRentDo.Size = new System.Drawing.Size(192, 75);
+            this.BtnRentDo.Size = new System.Drawing.Size(357, 150);
             this.BtnRentDo.TabIndex = 3;
             this.BtnRentDo.Text = "대여하기";
             this.BtnRentDo.UseVisualStyleBackColor = false;
@@ -107,9 +113,10 @@
             // 
             this.ComboType.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ComboType.FormattingEnabled = true;
-            this.ComboType.Location = new System.Drawing.Point(333, 60);
+            this.ComboType.Location = new System.Drawing.Point(618, 120);
+            this.ComboType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ComboType.Name = "ComboType";
-            this.ComboType.Size = new System.Drawing.Size(246, 38);
+            this.ComboType.Size = new System.Drawing.Size(453, 65);
             this.ComboType.TabIndex = 2;
             this.ComboType.SelectedIndexChanged += new System.EventHandler(this.ComboType_SelectedIndexChanged);
             // 
@@ -117,9 +124,10 @@
             // 
             this.LblTime.AutoSize = true;
             this.LblTime.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LblTime.Location = new System.Drawing.Point(147, 124);
+            this.LblTime.Location = new System.Drawing.Point(273, 248);
+            this.LblTime.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LblTime.Name = "LblTime";
-            this.LblTime.Size = new System.Drawing.Size(123, 30);
+            this.LblTime.Size = new System.Drawing.Size(249, 57);
             this.LblTime.TabIndex = 1;
             this.LblTime.Text = "사용 시간 : ";
             // 
@@ -127,15 +135,17 @@
             // 
             this.LblType.AutoSize = true;
             this.LblType.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LblType.Location = new System.Drawing.Point(147, 63);
+            this.LblType.Location = new System.Drawing.Point(273, 126);
+            this.LblType.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LblType.Name = "LblType";
-            this.LblType.Size = new System.Drawing.Size(144, 30);
+            this.LblType.Size = new System.Drawing.Size(291, 57);
             this.LblType.TabIndex = 0;
             this.LblType.Text = "충전기 유형 : ";
             // 
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuMain,
@@ -144,46 +154,49 @@
             this.menuLogout});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(881, 29);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
+            this.menuStrip1.Size = new System.Drawing.Size(1636, 57);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuMain
             // 
             this.menuMain.Name = "menuMain";
-            this.menuMain.Size = new System.Drawing.Size(86, 25);
+            this.menuMain.Size = new System.Drawing.Size(168, 49);
             this.menuMain.Text = "메인화면";
             this.menuMain.Click += new System.EventHandler(this.menuMain_Click);
             // 
             // menuBroken
             // 
             this.menuBroken.Name = "menuBroken";
-            this.menuBroken.Size = new System.Drawing.Size(86, 25);
+            this.menuBroken.Size = new System.Drawing.Size(168, 49);
             this.menuBroken.Text = "고장신고";
             this.menuBroken.Click += new System.EventHandler(this.menuBroken_Click);
             // 
             // menuHistory
             // 
             this.menuHistory.Name = "menuHistory";
-            this.menuHistory.Size = new System.Drawing.Size(86, 25);
+            this.menuHistory.Size = new System.Drawing.Size(168, 49);
             this.menuHistory.Text = "사용내역";
             this.menuHistory.Click += new System.EventHandler(this.menuHistory_Click);
             // 
             // menuLogout
             // 
             this.menuLogout.Name = "menuLogout";
-            this.menuLogout.Size = new System.Drawing.Size(86, 25);
+            this.menuLogout.Size = new System.Drawing.Size(168, 49);
             this.menuLogout.Text = "로그아웃";
             this.menuLogout.Click += new System.EventHandler(this.menuLogout_Click);
             // 
             // UserRentalForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 477);
+            this.ClientSize = new System.Drawing.Size(1636, 954);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "UserRentalForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "대여";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

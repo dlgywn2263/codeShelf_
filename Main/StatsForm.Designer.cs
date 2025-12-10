@@ -57,9 +57,11 @@
             this.groupBox2.Controls.Add(this.btnAvgFee);
             this.groupBox2.Controls.Add(this.btnPreference);
             this.groupBox2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox2.Location = new System.Drawing.Point(773, 275);
+            this.groupBox2.Location = new System.Drawing.Point(1436, 550);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(391, 209);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Size = new System.Drawing.Size(726, 418);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "통계 상세";
@@ -67,9 +69,10 @@
             // btnAvgRent
             // 
             this.btnAvgRent.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnAvgRent.Location = new System.Drawing.Point(31, 41);
+            this.btnAvgRent.Location = new System.Drawing.Point(58, 82);
+            this.btnAvgRent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAvgRent.Name = "btnAvgRent";
-            this.btnAvgRent.Size = new System.Drawing.Size(152, 61);
+            this.btnAvgRent.Size = new System.Drawing.Size(282, 122);
             this.btnAvgRent.TabIndex = 16;
             this.btnAvgRent.Text = "평균 대여 횟수";
             this.btnAvgRent.UseVisualStyleBackColor = true;
@@ -78,9 +81,10 @@
             // btnFailureRate
             // 
             this.btnFailureRate.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnFailureRate.Location = new System.Drawing.Point(204, 41);
+            this.btnFailureRate.Location = new System.Drawing.Point(379, 82);
+            this.btnFailureRate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnFailureRate.Name = "btnFailureRate";
-            this.btnFailureRate.Size = new System.Drawing.Size(152, 61);
+            this.btnFailureRate.Size = new System.Drawing.Size(282, 122);
             this.btnFailureRate.TabIndex = 17;
             this.btnFailureRate.Text = "고장률";
             this.btnFailureRate.UseVisualStyleBackColor = true;
@@ -89,9 +93,10 @@
             // btnAvgFee
             // 
             this.btnAvgFee.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnAvgFee.Location = new System.Drawing.Point(31, 121);
+            this.btnAvgFee.Location = new System.Drawing.Point(58, 242);
+            this.btnAvgFee.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAvgFee.Name = "btnAvgFee";
-            this.btnAvgFee.Size = new System.Drawing.Size(152, 61);
+            this.btnAvgFee.Size = new System.Drawing.Size(282, 122);
             this.btnAvgFee.TabIndex = 18;
             this.btnAvgFee.Text = "평균요금";
             this.btnAvgFee.UseVisualStyleBackColor = true;
@@ -100,9 +105,10 @@
             // btnPreference
             // 
             this.btnPreference.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnPreference.Location = new System.Drawing.Point(204, 119);
+            this.btnPreference.Location = new System.Drawing.Point(379, 238);
+            this.btnPreference.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnPreference.Name = "btnPreference";
-            this.btnPreference.Size = new System.Drawing.Size(152, 61);
+            this.btnPreference.Size = new System.Drawing.Size(282, 122);
             this.btnPreference.TabIndex = 19;
             this.btnPreference.Text = "선호도";
             this.btnPreference.UseVisualStyleBackColor = true;
@@ -112,9 +118,11 @@
             // 
             this.groupBox3.Controls.Add(this.chartStats);
             this.groupBox3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox3.Location = new System.Drawing.Point(32, 37);
+            this.groupBox3.Location = new System.Drawing.Point(59, 74);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(717, 362);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox3.Size = new System.Drawing.Size(1332, 724);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "통계 그래프";
@@ -125,13 +133,14 @@
             this.chartStats.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartStats.Legends.Add(legend1);
-            this.chartStats.Location = new System.Drawing.Point(26, 28);
+            this.chartStats.Location = new System.Drawing.Point(48, 56);
+            this.chartStats.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.chartStats.Name = "chartStats";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartStats.Series.Add(series1);
-            this.chartStats.Size = new System.Drawing.Size(665, 312);
+            this.chartStats.Size = new System.Drawing.Size(1235, 624);
             this.chartStats.TabIndex = 16;
             this.chartStats.Text = "chart1";
             // 
@@ -142,9 +151,11 @@
             this.groupBox1.Controls.Add(this.lblFailureRate);
             this.groupBox1.Controls.Add(this.lblAvgFee);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.Location = new System.Drawing.Point(773, 37);
+            this.groupBox1.Location = new System.Drawing.Point(1436, 74);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(391, 218);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Size = new System.Drawing.Size(726, 436);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "통계 요약";
@@ -153,9 +164,10 @@
             // 
             this.lblPref.AutoSize = true;
             this.lblPref.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblPref.Location = new System.Drawing.Point(29, 160);
+            this.lblPref.Location = new System.Drawing.Point(54, 320);
+            this.lblPref.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPref.Name = "lblPref";
-            this.lblPref.Size = new System.Drawing.Size(151, 21);
+            this.lblPref.Size = new System.Drawing.Size(299, 45);
             this.lblPref.TabIndex = 15;
             this.lblPref.Text = "일반/고속 선호도 : ";
             // 
@@ -163,9 +175,10 @@
             // 
             this.lblAvgRent.AutoSize = true;
             this.lblAvgRent.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblAvgRent.Location = new System.Drawing.Point(29, 45);
+            this.lblAvgRent.Location = new System.Drawing.Point(54, 90);
+            this.lblAvgRent.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblAvgRent.Name = "lblAvgRent";
-            this.lblAvgRent.Size = new System.Drawing.Size(134, 21);
+            this.lblAvgRent.Size = new System.Drawing.Size(264, 45);
             this.lblAvgRent.TabIndex = 12;
             this.lblAvgRent.Text = "평균 대여 횟수 : ";
             // 
@@ -173,9 +186,10 @@
             // 
             this.lblFailureRate.AutoSize = true;
             this.lblFailureRate.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblFailureRate.Location = new System.Drawing.Point(29, 120);
+            this.lblFailureRate.Location = new System.Drawing.Point(54, 240);
+            this.lblFailureRate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblFailureRate.Name = "lblFailureRate";
-            this.lblFailureRate.Size = new System.Drawing.Size(74, 21);
+            this.lblFailureRate.Size = new System.Drawing.Size(146, 45);
             this.lblFailureRate.TabIndex = 14;
             this.lblFailureRate.Text = "고장률 : ";
             // 
@@ -183,9 +197,10 @@
             // 
             this.lblAvgFee.AutoSize = true;
             this.lblAvgFee.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblAvgFee.Location = new System.Drawing.Point(29, 82);
+            this.lblAvgFee.Location = new System.Drawing.Point(54, 164);
+            this.lblAvgFee.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblAvgFee.Name = "lblAvgFee";
-            this.lblAvgFee.Size = new System.Drawing.Size(96, 21);
+            this.lblAvgFee.Size = new System.Drawing.Size(189, 45);
             this.lblAvgFee.TabIndex = 13;
             this.lblAvgFee.Text = "평균 요금 : ";
             // 
@@ -193,9 +208,10 @@
             // 
             this.btnBack.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnBack.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnBack.Location = new System.Drawing.Point(573, 423);
+            this.btnBack.Location = new System.Drawing.Point(1064, 846);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(150, 61);
+            this.btnBack.Size = new System.Drawing.Size(279, 122);
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "돌아가기";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -203,14 +219,16 @@
             // 
             // StatsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1218, 519);
+            this.ClientSize = new System.Drawing.Size(2262, 1038);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "StatsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "통계관리";
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

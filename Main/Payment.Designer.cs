@@ -45,9 +45,10 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblDate.Location = new System.Drawing.Point(31, 90);
+            this.lblDate.Location = new System.Drawing.Point(124, 179);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(67, 30);
+            this.lblDate.Size = new System.Drawing.Size(135, 57);
             this.lblDate.TabIndex = 0;
             this.lblDate.Text = "날짜: ";
             // 
@@ -55,9 +56,10 @@
             // 
             this.date.AutoSize = true;
             this.date.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.date.Location = new System.Drawing.Point(274, 90);
+            this.date.Location = new System.Drawing.Point(464, 179);
+            this.date.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(70, 30);
+            this.date.Size = new System.Drawing.Size(137, 57);
             this.date.TabIndex = 1;
             this.date.Text = "label2";
             // 
@@ -65,9 +67,10 @@
             // 
             this.lblSpot.AutoSize = true;
             this.lblSpot.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblSpot.Location = new System.Drawing.Point(31, 141);
+            this.lblSpot.Location = new System.Drawing.Point(124, 281);
+            this.lblSpot.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblSpot.Name = "lblSpot";
-            this.lblSpot.Size = new System.Drawing.Size(88, 30);
+            this.lblSpot.Size = new System.Drawing.Size(177, 57);
             this.lblSpot.TabIndex = 2;
             this.lblSpot.Text = "지점명: ";
             // 
@@ -75,9 +78,10 @@
             // 
             this.lblContent.AutoSize = true;
             this.lblContent.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblContent.Location = new System.Drawing.Point(31, 190);
+            this.lblContent.Location = new System.Drawing.Point(124, 379);
+            this.lblContent.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(116, 30);
+            this.lblContent.Size = new System.Drawing.Size(234, 57);
             this.lblContent.TabIndex = 3;
             this.lblContent.Text = "결제 내용: ";
             // 
@@ -85,9 +89,10 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblPrice.Location = new System.Drawing.Point(35, 237);
+            this.lblPrice.Location = new System.Drawing.Point(131, 473);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(165, 30);
+            this.lblPrice.Size = new System.Drawing.Size(333, 57);
             this.lblPrice.TabIndex = 4;
             this.lblPrice.Text = "최종 결제 금액: ";
             // 
@@ -95,9 +100,10 @@
             // 
             this.spot.AutoSize = true;
             this.spot.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.spot.Location = new System.Drawing.Point(274, 141);
+            this.spot.Location = new System.Drawing.Point(464, 281);
+            this.spot.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.spot.Name = "spot";
-            this.spot.Size = new System.Drawing.Size(70, 30);
+            this.spot.Size = new System.Drawing.Size(137, 57);
             this.spot.TabIndex = 5;
             this.spot.Text = "label6";
             // 
@@ -105,9 +111,10 @@
             // 
             this.content.AutoSize = true;
             this.content.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.content.Location = new System.Drawing.Point(274, 190);
+            this.content.Location = new System.Drawing.Point(464, 379);
+            this.content.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.content.Name = "content";
-            this.content.Size = new System.Drawing.Size(70, 30);
+            this.content.Size = new System.Drawing.Size(137, 57);
             this.content.TabIndex = 6;
             this.content.Text = "label7";
             // 
@@ -115,9 +122,10 @@
             // 
             this.price.AutoSize = true;
             this.price.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.price.Location = new System.Drawing.Point(274, 237);
+            this.price.Location = new System.Drawing.Point(464, 473);
+            this.price.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.price.Name = "price";
-            this.price.Size = new System.Drawing.Size(70, 30);
+            this.price.Size = new System.Drawing.Size(137, 57);
             this.price.TabIndex = 7;
             this.price.Text = "label8";
             // 
@@ -125,9 +133,10 @@
             // 
             this.btnPay.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnPay.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnPay.Location = new System.Drawing.Point(36, 319);
+            this.btnPay.Location = new System.Drawing.Point(175, 642);
+            this.btnPay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(145, 66);
+            this.btnPay.Size = new System.Drawing.Size(269, 132);
             this.btnPay.TabIndex = 8;
             this.btnPay.Text = "결제하기";
             this.btnPay.UseVisualStyleBackColor = false;
@@ -137,9 +146,10 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.LightGray;
             this.btnCancel.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnCancel.Location = new System.Drawing.Point(233, 319);
+            this.btnCancel.Location = new System.Drawing.Point(474, 642);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(145, 66);
+            this.btnCancel.Size = new System.Drawing.Size(269, 132);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "취소";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -149,17 +159,18 @@
             // 
             this.title.AutoSize = true;
             this.title.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.title.Location = new System.Drawing.Point(138, 24);
+            this.title.Location = new System.Drawing.Point(329, 60);
+            this.title.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(118, 32);
+            this.title.Size = new System.Drawing.Size(237, 65);
             this.title.TabIndex = 28;
             this.title.Text = "결제 정보";
             // 
             // Payment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 409);
+            this.ClientSize = new System.Drawing.Size(913, 818);
             this.Controls.Add(this.title);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnPay);
@@ -171,7 +182,9 @@
             this.Controls.Add(this.lblSpot);
             this.Controls.Add(this.date);
             this.Controls.Add(this.lblDate);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Payment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "결제 정보";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -66,6 +66,22 @@ namespace Main
             }
         }
 
+        private decimal SafeDecimal(object val)
+        {
+            if (val == DBNull.Value || val == null)
+                return 0;
+
+            decimal result;
+            if (decimal.TryParse(val.ToString(), out result))
+                return result;
+
+            return 0;
+        }
+
+       
+
+
+
         // ================================
         // 📌 요약 정보 계산 (SUM, AVG, COUNT)
         // ================================
@@ -93,20 +109,25 @@ namespace Main
 
                 if (dr.Read())
                 {
-                    txtTotalCount.Text = dr["CNT"].ToString();
-                    txtSumPrice.Text = dr["SUM_PRICE"]?.ToString() ?? "0";
-                    txtLateSum.Text = "0"; // 테이블에 late_fee 없음
-                    txtTotalSum.Text = dr["SUM_TOTAL"]?.ToString() ?? "0";
-                    txtAvgPrice.Text = dr["AVG_TOTAL"]?.ToString() ?? "0";
+                    txtTotalCount.Text = SafeDecimal(dr["CNT"]).ToString();
+                    txtSumPrice.Text = SafeDecimal(dr["SUM_PRICE"]).ToString();
+                    txtLateSum.Text = "0"; // late_fee 없음
+                    txtTotalSum.Text = SafeDecimal(dr["SUM_TOTAL"]).ToString();
+                    txtAvgPrice.Text = SafeDecimal(dr["AVG_TOTAL"]).ToString();
                 }
             }
         }
-        
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             new MainForm().Show();
             this.Close();
+        }
+
+        private void txtTotalCount_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

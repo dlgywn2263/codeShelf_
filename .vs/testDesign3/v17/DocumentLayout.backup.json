@@ -3,27 +3,123 @@
   "WorkspaceRootPath": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\chargerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\chargerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\brokenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|d:\\c#_codeshelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\brokenform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\brokenmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|d:\\c#_codeshelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\brokenform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\brokenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\rateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\rateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\rentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\settlementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\settlementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\settlementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\settlementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\settlementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\settlementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\userhistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\userhistoryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\passwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\passwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\passwd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\passwd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\signupform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\passwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\passwd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\statsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\statsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\userhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\userhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\usermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\usermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\userreturnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\userreturnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\userrentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\userrentalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\locationform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\locationform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\chargerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\chargerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\chargerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\chargerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\rateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\rateform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|d:\\c#_codeshelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\chargerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\chargerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\chargerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,52 +127,20 @@
       "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\rateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\chargerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\chargerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\rateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\rateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\brokenmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\statsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\statsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\statsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\statsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\settlementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\settlementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\settlementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\settlementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\main\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +154,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "SettlementForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SettlementForm.cs",
               "RelativeDocumentMoniker": "Main\\SettlementForm.cs",
@@ -98,8 +162,19 @@
               "RelativeToolTip": "Main\\SettlementForm.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T11:33:08.398Z",
-              "IsPinned": true,
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BrokenForm.resx",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenForm.resx",
+              "RelativeDocumentMoniker": "Main\\BrokenForm.resx",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenForm.resx",
+              "RelativeToolTip": "Main\\BrokenForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-12-10T16:02:44.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -107,20 +182,307 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RateForm.Designer.cs",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RateForm.Designer.cs",
-              "RelativeDocumentMoniker": "Main\\RateForm.Designer.cs",
-              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RateForm.Designer.cs",
-              "RelativeToolTip": "Main\\RateForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "BrokenForm.Designer.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenForm.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\BrokenForm.Designer.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenForm.Designer.cs",
+              "RelativeToolTip": "Main\\BrokenForm.Designer.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAIwNYAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T12:46:07.791Z",
+              "WhenOpened": "2025-12-10T15:41:21.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RateForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RateForm.cs",
+              "RelativeDocumentMoniker": "Main\\RateForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RateForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\RateForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T12:22:20.859Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Payment.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Payment.cs",
+              "RelativeDocumentMoniker": "Main\\Payment.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Payment.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\Payment.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:40:29.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BrokenForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenForm.cs",
+              "RelativeDocumentMoniker": "Main\\BrokenForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\BrokenForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:15:57.949Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BrokenManageForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenManageForm.cs",
+              "RelativeDocumentMoniker": "Main\\BrokenManageForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenManageForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\BrokenManageForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T12:34:13.729Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RentalForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RentalForm.cs",
+              "RelativeDocumentMoniker": "Main\\RentalForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RentalForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\RentalForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:37:23.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BrokenForm.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenForm.cs",
+              "RelativeDocumentMoniker": "Main\\BrokenForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenForm.cs",
+              "RelativeToolTip": "Main\\BrokenForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:41:17.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SettlementForm.Designer.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SettlementForm.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\SettlementForm.Designer.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SettlementForm.Designer.cs",
+              "RelativeToolTip": "Main\\SettlementForm.Designer.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAIwOkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:19:10.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserHistoryForm.Designer.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserHistoryForm.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\UserHistoryForm.Designer.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserHistoryForm.Designer.cs",
+              "RelativeToolTip": "Main\\UserHistoryForm.Designer.cs",
+              "ViewState": "AgIAANIAAAAAAAAAAAAIwN8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:22:22.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SettlementForm.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SettlementForm.cs",
+              "RelativeDocumentMoniker": "Main\\SettlementForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SettlementForm.cs",
+              "RelativeToolTip": "Main\\SettlementForm.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAswFAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T12:54:47.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Start.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Start.cs",
+              "RelativeDocumentMoniker": "Main\\Start.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Start.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\Start.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:49:45.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LocationForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\LocationForm.cs",
+              "RelativeDocumentMoniker": "Main\\LocationForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\LocationForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\LocationForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T12:20:53.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Passwd.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Passwd.cs",
+              "RelativeDocumentMoniker": "Main\\Passwd.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Passwd.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\Passwd.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:40:32.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Passwd.Designer.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Passwd.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\Passwd.Designer.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Passwd.Designer.cs",
+              "RelativeToolTip": "Main\\Passwd.Designer.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAIwLQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:04:29.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SignupForm.Designer.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SignupForm.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\SignupForm.Designer.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SignupForm.Designer.cs",
+              "RelativeToolTip": "Main\\SignupForm.Designer.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAIwMAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:13:59.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SignupForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SignupForm.cs",
+              "RelativeDocumentMoniker": "Main\\SignupForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SignupForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\SignupForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:49:42.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Passwd.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Passwd.cs",
+              "RelativeDocumentMoniker": "Main\\Passwd.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Passwd.cs",
+              "RelativeToolTip": "Main\\Passwd.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T15:04:05.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StatsForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\StatsForm.cs",
+              "RelativeDocumentMoniker": "Main\\StatsForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\StatsForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\StatsForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T16:30:13.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserHistoryForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserHistoryForm.cs",
+              "RelativeDocumentMoniker": "Main\\UserHistoryForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserHistoryForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\UserHistoryForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:58:56.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserMainForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserMainForm.cs",
+              "RelativeDocumentMoniker": "Main\\UserMainForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserMainForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\UserMainForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:59:09.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserReturnForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserReturnForm.cs",
+              "RelativeDocumentMoniker": "Main\\UserReturnForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserReturnForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\UserReturnForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:59:38.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserRentalForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserRentalForm.cs",
+              "RelativeDocumentMoniker": "Main\\UserRentalForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\UserRentalForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\UserRentalForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:59:22.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MainForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\MainForm.cs",
+              "RelativeDocumentMoniker": "Main\\MainForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\MainForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\MainForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T16:36:33.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LocationForm.Designer.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\LocationForm.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\LocationForm.Designer.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\LocationForm.Designer.cs",
+              "RelativeToolTip": "Main\\LocationForm.Designer.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAIwJkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:20:20.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ChargerForm.Designer.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\ChargerForm.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\ChargerForm.Designer.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\ChargerForm.Designer.cs",
+              "RelativeToolTip": "Main\\ChargerForm.Designer.cs",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAAwHQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T15:13:31.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ChargerForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\ChargerForm.cs",
+              "RelativeDocumentMoniker": "Main\\ChargerForm.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\ChargerForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\ChargerForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T17:10:03.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "ChargerForm.cs",
               "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\ChargerForm.cs",
               "RelativeDocumentMoniker": "Main\\ChargerForm.cs",
@@ -128,61 +490,23 @@
               "RelativeToolTip": "Main\\ChargerForm.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAwBAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T15:03:43.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T15:03:43.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\MainForm.cs",
-              "RelativeDocumentMoniker": "Main\\MainForm.cs",
-              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\MainForm.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Main\\MainForm.cs [\uB514\uC790\uC778]",
+              "DocumentIndex": 28,
+              "Title": "RateForm.Designer.cs",
+              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RateForm.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\RateForm.Designer.cs",
+              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RateForm.Designer.cs",
+              "RelativeToolTip": "Main\\RateForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T16:36:33.622Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-12-07T12:46:07.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LocationForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\LocationForm.cs",
-              "RelativeDocumentMoniker": "Main\\LocationForm.cs",
-              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\LocationForm.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Main\\LocationForm.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T12:20:53.072Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChargerForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\ChargerForm.cs",
-              "RelativeDocumentMoniker": "Main\\ChargerForm.cs",
-              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\ChargerForm.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Main\\ChargerForm.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T17:10:03.858Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ChargerForm.Designer.cs",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\ChargerForm.Designer.cs",
-              "RelativeDocumentMoniker": "Main\\ChargerForm.Designer.cs",
-              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\ChargerForm.Designer.cs",
-              "RelativeToolTip": "Main\\ChargerForm.Designer.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAArwK8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T15:13:31.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 30,
               "Title": "RateForm.cs",
               "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RateForm.cs",
               "RelativeDocumentMoniker": "Main\\RateForm.cs",
@@ -194,27 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RateForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RateForm.cs",
-              "RelativeDocumentMoniker": "Main\\RateForm.cs",
-              "ToolTip": "C:\\Users\\3988l\\OneDrive\\\uBB38\uC11C\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\RateForm.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T12:22:20.859Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BrokenManageForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenManageForm.cs",
-              "RelativeDocumentMoniker": "Main\\BrokenManageForm.cs",
-              "ToolTip": "C:\\Users\\3988l\\OneDrive\\\uBB38\uC11C\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\BrokenManageForm.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T12:34:13.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 31,
               "Title": "StatsForm.Designer.cs",
               "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\StatsForm.Designer.cs",
               "RelativeDocumentMoniker": "Main\\StatsForm.Designer.cs",
@@ -226,30 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\MainForm.cs",
-              "RelativeDocumentMoniker": "Main\\MainForm.cs",
-              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\MainForm.cs",
-              "RelativeToolTip": "Main\\MainForm.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAASwJAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T16:36:35.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StatsForm.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\StatsForm.cs",
-              "RelativeDocumentMoniker": "Main\\StatsForm.cs",
-              "ToolTip": "C:\\Users\\3988l\\OneDrive\\\uBB38\uC11C\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\StatsForm.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T16:30:13.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 34,
               "Title": "LocationForm.cs",
               "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\LocationForm.cs",
               "RelativeDocumentMoniker": "Main\\LocationForm.cs",
@@ -257,38 +538,11 @@
               "RelativeToolTip": "Main\\LocationForm.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T15:14:22.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T15:14:22.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SettlementForm.cs",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SettlementForm.cs",
-              "RelativeDocumentMoniker": "Main\\SettlementForm.cs",
-              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SettlementForm.cs",
-              "RelativeToolTip": "Main\\SettlementForm.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAuwGcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T12:54:47.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SettlementForm.Designer.cs",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SettlementForm.Designer.cs",
-              "RelativeDocumentMoniker": "Main\\SettlementForm.Designer.cs",
-              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\SettlementForm.Designer.cs",
-              "RelativeToolTip": "Main\\SettlementForm.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T12:55:32.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 33,
               "Title": "MemberForm.cs",
               "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\MemberForm.cs",
               "RelativeDocumentMoniker": "Main\\MemberForm.cs",
@@ -300,25 +554,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 32,
               "Title": "MemberForm.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\MemberForm.cs",
               "RelativeDocumentMoniker": "Main\\MemberForm.cs",
               "ToolTip": "C:\\Users\\3988l\\OneDrive\\\uBB38\uC11C\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\MemberForm.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-07T13:35:28.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Start.cs",
-              "DocumentMoniker": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Start.cs",
-              "RelativeDocumentMoniker": "Main\\Start.cs",
-              "ToolTip": "D:\\C#_codeShelf\\\uAD00\uB9AC\uC790\uCABD \uC218\uC815\\Main\\Start.cs",
-              "RelativeToolTip": "Main\\Start.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T11:55:29.59Z"
             }
           ]
         },

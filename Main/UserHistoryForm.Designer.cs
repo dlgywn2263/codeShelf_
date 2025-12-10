@@ -52,9 +52,11 @@
             // 
             this.groupBox1.Controls.Add(this.dgvHistory);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.Location = new System.Drawing.Point(52, 202);
+            this.groupBox1.Location = new System.Drawing.Point(97, 404);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(980, 432);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Size = new System.Drawing.Size(1820, 864);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "사용 내역 조회";
@@ -62,16 +64,18 @@
             // dgvHistory
             // 
             this.dgvHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHistory.Location = new System.Drawing.Point(28, 31);
+            this.dgvHistory.Location = new System.Drawing.Point(52, 62);
+            this.dgvHistory.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dgvHistory.Name = "dgvHistory";
             this.dgvHistory.RowHeadersWidth = 82;
             this.dgvHistory.RowTemplate.Height = 23;
-            this.dgvHistory.Size = new System.Drawing.Size(925, 370);
+            this.dgvHistory.Size = new System.Drawing.Size(1718, 740);
             this.dgvHistory.TabIndex = 0;
             // 
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuMain,
@@ -80,34 +84,35 @@
             this.menuLogout});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1089, 29);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
+            this.menuStrip1.Size = new System.Drawing.Size(2022, 57);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuMain
             // 
             this.menuMain.Name = "menuMain";
-            this.menuMain.Size = new System.Drawing.Size(86, 25);
+            this.menuMain.Size = new System.Drawing.Size(168, 49);
             this.menuMain.Text = "메인화면";
             this.menuMain.Click += new System.EventHandler(this.menuMain_Click);
             // 
             // menuBroken
             // 
             this.menuBroken.Name = "menuBroken";
-            this.menuBroken.Size = new System.Drawing.Size(86, 25);
+            this.menuBroken.Size = new System.Drawing.Size(168, 49);
             this.menuBroken.Text = "고장신고";
             this.menuBroken.Click += new System.EventHandler(this.menuBroken_Click);
             // 
             // menuHistory
             // 
             this.menuHistory.Name = "menuHistory";
-            this.menuHistory.Size = new System.Drawing.Size(86, 25);
+            this.menuHistory.Size = new System.Drawing.Size(168, 49);
             this.menuHistory.Text = "사용내역";
             // 
             // menuLogout
             // 
             this.menuLogout.Name = "menuLogout";
-            this.menuLogout.Size = new System.Drawing.Size(86, 25);
+            this.menuLogout.Size = new System.Drawing.Size(168, 49);
             this.menuLogout.Text = "로그아웃";
             this.menuLogout.Click += new System.EventHandler(this.menuLogout_Click);
             // 
@@ -115,9 +120,10 @@
             // 
             this.title.AutoSize = true;
             this.title.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.title.Location = new System.Drawing.Point(383, 67);
+            this.title.Location = new System.Drawing.Point(711, 134);
+            this.title.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(332, 32);
+            this.title.Size = new System.Drawing.Size(668, 65);
             this.title.TabIndex = 28;
             this.title.Text = "사용자님의 사용 내역 입니다.";
             // 
@@ -131,20 +137,22 @@
             this.cbSort.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cbSort.FormattingEnabled = true;
             this.cbSort.IntegralHeight = false;
-            this.cbSort.ItemHeight = 30;
-            this.cbSort.Location = new System.Drawing.Point(513, 149);
+            this.cbSort.ItemHeight = 57;
+            this.cbSort.Location = new System.Drawing.Point(953, 298);
+            this.cbSort.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cbSort.Name = "cbSort";
-            this.cbSort.Size = new System.Drawing.Size(202, 38);
+            this.cbSort.Size = new System.Drawing.Size(372, 65);
             this.cbSort.TabIndex = 32;
             // 
             // txtSearch
             // 
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtSearch.Location = new System.Drawing.Point(127, 148);
+            this.txtSearch.Location = new System.Drawing.Point(236, 296);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(202, 36);
+            this.txtSearch.Size = new System.Drawing.Size(373, 70);
             this.txtSearch.TabIndex = 33;
             this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown_1);
             // 
@@ -152,9 +160,10 @@
             // 
             this.lblSort.AutoSize = true;
             this.lblSort.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblSort.Location = new System.Drawing.Point(388, 150);
+            this.lblSort.Location = new System.Drawing.Point(721, 300);
+            this.lblSort.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblSort.Name = "lblSort";
-            this.lblSort.Size = new System.Drawing.Size(109, 30);
+            this.lblSort.Size = new System.Drawing.Size(219, 57);
             this.lblSort.TabIndex = 34;
             this.lblSort.Text = "정렬 기준:";
             // 
@@ -162,9 +171,10 @@
             // 
             this.lblSearch.AutoSize = true;
             this.lblSearch.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblSearch.Location = new System.Drawing.Point(61, 152);
+            this.lblSearch.Location = new System.Drawing.Point(113, 304);
+            this.lblSearch.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(60, 30);
+            this.lblSearch.Size = new System.Drawing.Size(120, 57);
             this.lblSearch.TabIndex = 35;
             this.lblSearch.Text = "검색:";
             // 
@@ -174,9 +184,10 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnSearch.Image = global::Main.Properties.Resources.search2;
-            this.btnSearch.Location = new System.Drawing.Point(328, 148);
+            this.btnSearch.Location = new System.Drawing.Point(609, 296);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(36, 36);
+            this.btnSearch.Size = new System.Drawing.Size(67, 72);
             this.btnSearch.TabIndex = 31;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
@@ -185,9 +196,10 @@
             // 
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbDate.Location = new System.Drawing.Point(744, 150);
+            this.lbDate.Location = new System.Drawing.Point(1382, 300);
+            this.lbDate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(60, 30);
+            this.lbDate.Size = new System.Drawing.Size(120, 57);
             this.lbDate.TabIndex = 37;
             this.lbDate.Text = "기간:";
             // 
@@ -200,18 +212,19 @@
             this.cbDateFilter.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cbDateFilter.FormattingEnabled = true;
             this.cbDateFilter.IntegralHeight = false;
-            this.cbDateFilter.ItemHeight = 30;
-            this.cbDateFilter.Location = new System.Drawing.Point(810, 148);
+            this.cbDateFilter.ItemHeight = 57;
+            this.cbDateFilter.Location = new System.Drawing.Point(1504, 296);
+            this.cbDateFilter.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cbDateFilter.Name = "cbDateFilter";
-            this.cbDateFilter.Size = new System.Drawing.Size(202, 38);
+            this.cbDateFilter.Size = new System.Drawing.Size(372, 65);
             this.cbDateFilter.TabIndex = 36;
             // 
             // UserHistoryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1089, 657);
+            this.ClientSize = new System.Drawing.Size(2022, 1314);
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.cbDateFilter);
             this.Controls.Add(this.lblSearch);
@@ -222,7 +235,9 @@
             this.Controls.Add(this.title);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "UserHistoryForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " 사용내역";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).EndInit();
