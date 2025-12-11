@@ -43,10 +43,9 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblId.Location = new System.Drawing.Point(183, 292);
-            this.lblId.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblId.Location = new System.Drawing.Point(99, 146);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(151, 57);
+            this.lblId.Size = new System.Drawing.Size(76, 30);
             this.lblId.TabIndex = 0;
             this.lblId.Text = "아이디";
             // 
@@ -54,10 +53,9 @@
             // 
             this.lblPw.AutoSize = true;
             this.lblPw.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblPw.Location = new System.Drawing.Point(183, 393);
-            this.lblPw.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblPw.Location = new System.Drawing.Point(99, 196);
             this.lblPw.Name = "lblPw";
-            this.lblPw.Size = new System.Drawing.Size(193, 57);
+            this.lblPw.Size = new System.Drawing.Size(97, 30);
             this.lblPw.TabIndex = 1;
             this.lblPw.Text = "비밀번호";
             // 
@@ -65,10 +63,9 @@
             // 
             this.BtnLogin.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BtnLogin.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnLogin.Location = new System.Drawing.Point(531, 577);
-            this.BtnLogin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BtnLogin.Location = new System.Drawing.Point(286, 288);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(413, 288);
+            this.BtnLogin.Size = new System.Drawing.Size(222, 144);
             this.BtnLogin.TabIndex = 2;
             this.BtnLogin.Text = "로그인";
             this.BtnLogin.UseVisualStyleBackColor = false;
@@ -78,10 +75,9 @@
             // 
             this.BtnSignup.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnSignup.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnSignup.Location = new System.Drawing.Point(180, 734);
-            this.BtnSignup.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BtnSignup.Location = new System.Drawing.Point(97, 367);
             this.BtnSignup.Name = "BtnSignup";
-            this.BtnSignup.Size = new System.Drawing.Size(322, 131);
+            this.BtnSignup.Size = new System.Drawing.Size(173, 66);
             this.BtnSignup.TabIndex = 3;
             this.BtnSignup.Text = "회원가입";
             this.BtnSignup.UseVisualStyleBackColor = false;
@@ -90,21 +86,19 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtId.Location = new System.Drawing.Point(406, 292);
-            this.txtId.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtId.Location = new System.Drawing.Point(219, 146);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(538, 63);
+            this.txtId.Size = new System.Drawing.Size(292, 35);
             this.txtId.TabIndex = 4;
             this.txtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtId_KeyDown_1);
             // 
             // txtPw
             // 
             this.txtPw.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtPw.Location = new System.Drawing.Point(406, 393);
-            this.txtPw.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtPw.Location = new System.Drawing.Point(219, 196);
             this.txtPw.Name = "txtPw";
             this.txtPw.PasswordChar = '●';
-            this.txtPw.Size = new System.Drawing.Size(538, 63);
+            this.txtPw.Size = new System.Drawing.Size(292, 35);
             this.txtPw.TabIndex = 5;
             this.txtPw.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPw_KeyDown_1);
             // 
@@ -112,10 +106,9 @@
             // 
             this.BtnPasswd.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnPasswd.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnPasswd.Location = new System.Drawing.Point(180, 577);
-            this.BtnPasswd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BtnPasswd.Location = new System.Drawing.Point(97, 288);
             this.BtnPasswd.Name = "BtnPasswd";
-            this.BtnPasswd.Size = new System.Drawing.Size(322, 135);
+            this.BtnPasswd.Size = new System.Drawing.Size(173, 68);
             this.BtnPasswd.TabIndex = 6;
             this.BtnPasswd.Text = "비밀번호찾기";
             this.BtnPasswd.UseVisualStyleBackColor = false;
@@ -125,10 +118,9 @@
             // 
             this.title.AutoSize = true;
             this.title.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.title.Location = new System.Drawing.Point(348, 90);
-            this.title.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.title.Location = new System.Drawing.Point(187, 45);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(493, 65);
+            this.title.Size = new System.Drawing.Size(246, 32);
             this.title.TabIndex = 7;
             this.title.Text = "충전기를 대여하세요!";
             this.title.Click += new System.EventHandler(this.title_Click);
@@ -137,10 +129,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LightGray;
             this.button1.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(803, 1013);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Location = new System.Drawing.Point(428, 480);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(315, 75);
+            this.button1.Size = new System.Drawing.Size(170, 38);
             this.button1.TabIndex = 8;
             this.button1.Text = "종료";
             this.button1.UseVisualStyleBackColor = false;
@@ -148,10 +139,10 @@
             // 
             // Start
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1133, 1103);
+            this.ClientSize = new System.Drawing.Size(610, 530);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.title);
             this.Controls.Add(this.BtnPasswd);
@@ -161,7 +152,6 @@
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.lblPw);
             this.Controls.Add(this.lblId);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "로그인";

@@ -1,17 +1,1 @@
-{
-  "ShowEmptyProjects": false,
-  "SelectedGroups": [],
-  "ExpandedProjects": [],
-  "EnableSpellChecker": true,
-  "ColumnOrder": [
-    "name",
-    "type",
-    "neutral-value",
-    "neutral-comment"
-  ],
-  "VisibleColumnKeys": [
-    "name",
-    "neutral-comment",
-    "neutral-value"
-  ]
-}
+{"ShowEmptyProjects":false,"CustomColumnOrderings":{},"ShowValidationErrors":true,"SelectedResourceGroupsByProjectFilePath":{"C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\Main.csproj":["C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\BrokenForm.resx"]},"VisibleColumnKeys":["name","neutral-comment","neutral-value"]}

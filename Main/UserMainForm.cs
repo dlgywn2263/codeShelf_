@@ -70,6 +70,25 @@ namespace Main
 
         private void BtnReturn_Click(object sender, EventArgs e)
         {
+            // 현재 대여 중 확인
+            using (OracleConnection conn = DB.GetConn())
+            {
+                conn.Open();
+
+                string sql = "SELECT COUNT(*) FROM rental WHERE member_id = :mid AND return_time IS NULL";
+
+                OracleCommand cmd = new OracleCommand(sql, conn);
+                cmd.Parameters.Add(":mid", UserSession.MemberId);
+
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                if (count == 0)
+                {
+                    MessageBox.Show("현재 반납할 충전기가 없습니다.");
+                    return;
+                }
+            }
+
             new UserReturnForm().Show();
             this.Close();
         }

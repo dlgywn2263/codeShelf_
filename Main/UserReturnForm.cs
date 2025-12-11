@@ -154,6 +154,8 @@ namespace Main
         // ------------------------------------------------------
         private void BtnReturnDo_Click(object sender, EventArgs e)
         {
+            int credChange = 0;
+
             using (OracleConnection conn = DB.GetConn())
             {
                 conn.Open();
@@ -188,7 +190,82 @@ namespace Main
                         cmd2.ExecuteNonQuery();
                     }
 
+                    // 신뢰도 계산 로직
+                    DateTime now = DateTime.Now;
+                    DateTime expectedReturn = rentalTime.AddHours(reservedHours);
+
+                    int overdueDays = (now - expectedReturn).Days;
+                    if (overdueDays < 0) overdueDays = 0;
+
+                    if (overdueDays == 0)
+                    {
+                        credChange = 5;
+                    }
+                    else
+                    {
+                        credChange = overdueDays * -10;
+                    }
+
+                    int currentReliability = 0;
+                    string sqlGetCred = "SELECT reliability FROM member WHERE member_id = :mid";
+                    using (OracleCommand cmdGet = new OracleCommand(sqlGetCred, conn))
+                    {
+                        cmdGet.Transaction = tran;
+                        cmdGet.Parameters.Add(":mid", UserSession.MemberId);
+                        currentReliability = Convert.ToInt32(cmdGet.ExecuteScalar());
+                    }
+
+                    // 신뢰도 계산
+                    int newReliability = currentReliability + credChange;
+
+                    // 0~100 제한
+                    if (newReliability < 0) newReliability = 0;
+                    if (newReliability > 100) newReliability = 100;
+
+                    string sqlCred = @"
+                        UPDATE member
+                        SET reliability = :newCred
+                        WHERE member_id = :mid
+                    ";
+
+                    using (OracleCommand cmdCred = new OracleCommand(sqlCred, conn))
+                    {
+                        cmdCred.Transaction = tran;
+                        cmdCred.Parameters.Add(":newCred", newReliability);
+                        cmdCred.Parameters.Add(":mid", UserSession.MemberId);
+                        cmdCred.ExecuteNonQuery();
+                    }
+
+                    string sqlStatus = @"
+                        UPDATE member
+                        SET status = CASE 
+                                        WHEN reliability <= 50 THEN '활동정지'
+                                        ELSE '활동'
+                                     END
+                        WHERE member_id = :mid
+                    ";
+
+                    using (OracleCommand cmdStatus = new OracleCommand(sqlStatus, conn))
+                    {
+                        cmdStatus.Transaction = tran;
+                        cmdStatus.Parameters.Add(":mid", UserSession.MemberId);
+                        cmdStatus.ExecuteNonQuery();
+                    }
+
                     tran.Commit();
+
+                    string changeText = (credChange > 0)
+                        ? $"+{credChange}"
+                        : $"{credChange}";
+
+                    // 메시지
+                    MessageBox.Show(
+                        $"반납 완료!\n" +
+                        $"사용시간: {TxtUsedTime.Text}\n" +
+                        $"최종 요금: {TxtFinalPrice.Text}원\n" +
+                        $"신뢰도 변화: {credChange}점\n" +
+                        $"현재 신뢰도: {newReliability}점"
+                    );
                 }
                 catch (Exception ex)
                 {
@@ -197,12 +274,6 @@ namespace Main
                     return;
                 }
             }
-
-            MessageBox.Show(
-                $"반납 완료!\n" +
-                $"사용시간: {TxtUsedTime.Text}\n" +
-                $"최종 요금: {TxtFinalPrice.Text}원"
-            );
 
             new UserMainForm().Show();
             this.Close();
