@@ -148,25 +148,45 @@ namespace Main
                 conn.Open();
 
                 string sql = @"
-            UPDATE member
-            SET 
-                name = :name,
-                id = :loginId,
-                password = :pw,
-                reliability = :cred,
-                status = :status
-            WHERE member_id = :mid
-        ";
+                    UPDATE member
+                    SET 
+                        name = :name,
+                        id = :loginId,
+                        password = :pw,
+                        reliability = :cred,
+                        status = :status
+                    WHERE member_id = :mid
+                ";
 
                 OracleCommand cmd = new OracleCommand(sql, conn);
+
+                int cred = int.Parse(txtMemberTrust.Text);
+                if (cred < 0) cred = 0;
+                if (cred > 100) cred = 100;
+
                 cmd.Parameters.Add(":name", txtMemberName.Text.Trim());
                 cmd.Parameters.Add(":loginId", txtLoginId.Text.Trim());   // ✔ 수정됨
                 cmd.Parameters.Add(":pw", txtMemberPw.Text.Trim());
-                cmd.Parameters.Add(":cred", txtMemberTrust.Text.Trim());
+                cmd.Parameters.Add(":cred", cred);
                 cmd.Parameters.Add(":status", comboStatus.Text.Trim());   // ✔ 상태 반영
                 cmd.Parameters.Add(":mid", currentMemberId);
 
                 cmd.ExecuteNonQuery();
+
+                string sqlStatus = @"
+                    UPDATE member
+                    SET status = CASE 
+                                   WHEN reliability <= 50 THEN '활동정지'
+                                   ELSE '활동'
+                                 END
+                    WHERE member_id = :mid
+                ";
+
+                using (OracleCommand cmdStatus = new OracleCommand(sqlStatus, conn))
+                {
+                    cmdStatus.Parameters.Add(":mid", currentMemberId);
+                    cmdStatus.ExecuteNonQuery();
+                }
             }
 
             MessageBox.Show("회원 정보가 정상적으로 수정되었습니다!");

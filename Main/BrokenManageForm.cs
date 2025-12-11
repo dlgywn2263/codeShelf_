@@ -149,15 +149,17 @@ namespace Main
                     // 1) broken 상태 및 상세 내용 업데이트
                     // -------------------------------------------------------------------
                     string sql1 = @"
-                UPDATE broken
-                SET repair_status = :status,
-                    repair_detail = :detail
-                WHERE broken_id = :bid
-            ";
+                        UPDATE broken
+                        SET repair_status = :status,
+                            repair_detail = :detail,
+                            symptom = :symptom
+                        WHERE broken_id = :bid
+                    ";
 
                     OracleCommand cmd1 = new OracleCommand(sql1, conn);
                     cmd1.Transaction = tran;
 
+                    cmd1.Parameters.Add(":symptom", cmbFaultType.Text.Trim()); 
                     cmd1.Parameters.Add(":status", cmbFaultStatus.Text.Trim());
                     cmd1.Parameters.Add(":detail", txtFaultText.Text.Trim());
                     cmd1.Parameters.Add(":bid", selectedBrokenId);
@@ -173,10 +175,10 @@ namespace Main
                     if (newStatus == "정상" || newStatus == "폐기")
                     {
                         string sql3 = @"
-                    UPDATE charger
-                    SET status = '대기'
-                    WHERE charger_id = :cid
-                ";
+                            UPDATE charger
+                            SET status = '대기'
+                            WHERE charger_id = :cid
+                        ";
 
                         OracleCommand cmd3 = new OracleCommand(sql3, conn);
                         cmd3.Transaction = tran;
@@ -193,10 +195,10 @@ namespace Main
                     if (minus > 0 && selectedMemberId > 0)
                     {
                         string sql2 = @"
-                    UPDATE member
-                    SET reliability = reliability - :minus_val
-                    WHERE member_id = :mid_val
-                ";
+                            UPDATE member
+                            SET reliability = reliability - :minus_val
+                            WHERE member_id = :mid_val
+                        ";
 
                         OracleCommand cmd2 = new OracleCommand(sql2, conn);
                         cmd2.Transaction = tran;
@@ -204,6 +206,24 @@ namespace Main
                         cmd2.Parameters.Add(":mid_val", selectedMemberId);
 
                         cmd2.ExecuteNonQuery();
+                    }
+
+                    // 상태 자동 업데이트
+                    string sqlStatus = @"
+                        UPDATE member
+                        SET status = CASE
+                                        WHEN reliability <= 50 THEN '활동정지'
+                                        ELSE '활동'
+                                     END
+                        WHERE member_id = :mid
+                    ";
+
+                    if (selectedMemberId > 0)
+                    {
+                        OracleCommand cmdStatus = new OracleCommand(sqlStatus, conn);
+                        cmdStatus.Transaction = tran;
+                        cmdStatus.Parameters.Add(":mid", selectedMemberId);
+                        cmdStatus.ExecuteNonQuery();
                     }
 
                     // 성공 처리
@@ -216,12 +236,9 @@ namespace Main
                     MessageBox.Show("DB 오류: " + ex.Message);
                 }
             }
-
             LoadBrokenList();
             LoadStatusCounts();
         }
-
-
 
         // 뒤로가기
         private void BtnBack_Click(object sender, EventArgs e)

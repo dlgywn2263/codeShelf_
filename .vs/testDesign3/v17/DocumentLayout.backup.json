@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|c:\\users\\user\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeshelf_\\main\\usermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\usermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|c:\\users\\user\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeshelf_\\main\\usermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\usermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|c:\\users\\user\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeshelf_\\main\\userreturnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\userreturnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|c:\\users\\user\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeshelf_\\main\\userreturnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\userreturnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|c:\\users\\user\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeshelf_\\main\\brokenmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\main\\brokenmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|c:\\users\\user\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeshelf_\\main\\brokenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|c:\\users\\user\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeshelf_\\main\\brokenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\brokenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|c:\\users\\user\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeshelf_\\main\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\main\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BFBE6317-AFD0-473E-8BFC-3CB9D2B5A857}|Main\\Main.csproj|solutionrelative:main\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserMainForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\UserMainForm.cs",
+              "RelativeDocumentMoniker": "Main\\UserMainForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\UserMainForm.cs",
+              "RelativeToolTip": "Main\\UserMainForm.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T11:26:49.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserMainForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\UserMainForm.cs",
+              "RelativeDocumentMoniker": "Main\\UserMainForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\UserMainForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\UserMainForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T11:26:43.522Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserReturnForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\UserReturnForm.cs",
+              "RelativeDocumentMoniker": "Main\\UserReturnForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\UserReturnForm.cs",
+              "RelativeToolTip": "Main\\UserReturnForm.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAADwv/8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T09:36:42.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BrokenManageForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\BrokenManageForm.cs",
+              "RelativeDocumentMoniker": "Main\\BrokenManageForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\BrokenManageForm.cs",
+              "RelativeToolTip": "Main\\BrokenManageForm.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAADgv+kAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T09:08:26.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserReturnForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\UserReturnForm.cs",
+              "RelativeDocumentMoniker": "Main\\UserReturnForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\UserReturnForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\UserReturnForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T09:36:39.042Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BrokenManageForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\BrokenManageForm.cs",
+              "RelativeDocumentMoniker": "Main\\BrokenManageForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\BrokenManageForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\BrokenManageForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T12:34:13.729Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BrokenForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\BrokenForm.cs",
+              "RelativeDocumentMoniker": "Main\\BrokenForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\BrokenForm.cs",
+              "RelativeToolTip": "Main\\BrokenForm.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwBIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T09:57:26.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BrokenForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\BrokenForm.cs",
+              "RelativeDocumentMoniker": "Main\\BrokenForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\BrokenForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\BrokenForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T09:27:12.969Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MemberForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\MemberForm.cs",
+              "RelativeDocumentMoniker": "Main\\MemberForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\MemberForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main\\MemberForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T13:35:28.113Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MemberForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\MemberForm.cs",
+              "RelativeDocumentMoniker": "Main\\MemberForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC5F0\uACC4\uD300\uD50C\\codeShelf_\\Main\\MemberForm.cs",
+              "RelativeToolTip": "Main\\MemberForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T09:08:49.051Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
