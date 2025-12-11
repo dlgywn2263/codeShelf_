@@ -149,9 +149,9 @@
             this.groupBox4.Controls.Add(this.panelReady);
             this.groupBox4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox4.Location = new System.Drawing.Point(1090, 322);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox4.Size = new System.Drawing.Size(566, 488);
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
@@ -172,7 +172,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.LightCoral;
             this.panel6.Location = new System.Drawing.Point(78, 248);
-            this.panel6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel6.Margin = new System.Windows.Forms.Padding(6);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(56, 60);
             this.panel6.TabIndex = 7;
@@ -214,7 +214,7 @@
             // 
             this.panelBroken.BackColor = System.Drawing.Color.DarkGray;
             this.panelBroken.Location = new System.Drawing.Point(78, 332);
-            this.panelBroken.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelBroken.Margin = new System.Windows.Forms.Padding(6);
             this.panelBroken.Name = "panelBroken";
             this.panelBroken.Size = new System.Drawing.Size(56, 60);
             this.panelBroken.TabIndex = 2;
@@ -223,7 +223,7 @@
             // 
             this.panelUsing.BackColor = System.Drawing.Color.LightGreen;
             this.panelUsing.Location = new System.Drawing.Point(78, 162);
-            this.panelUsing.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelUsing.Margin = new System.Windows.Forms.Padding(6);
             this.panelUsing.Name = "panelUsing";
             this.panelUsing.Size = new System.Drawing.Size(56, 60);
             this.panelUsing.TabIndex = 1;
@@ -232,7 +232,7 @@
             // 
             this.panelReady.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
             this.panelReady.Location = new System.Drawing.Point(78, 86);
-            this.panelReady.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelReady.Margin = new System.Windows.Forms.Padding(6);
             this.panelReady.Name = "panelReady";
             this.panelReady.Size = new System.Drawing.Size(56, 60);
             this.panelReady.TabIndex = 0;
@@ -242,9 +242,9 @@
             this.groupBox1.Controls.Add(this.flowPanelChargers);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(71, 118);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox1.Size = new System.Drawing.Size(964, 998);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
@@ -273,7 +273,7 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(25, 26);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(271, 194);
             this.panel2.TabIndex = 1;
@@ -315,7 +315,7 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Location = new System.Drawing.Point(308, 26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(275, 194);
             this.panel1.TabIndex = 5;
@@ -357,7 +357,7 @@
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Location = new System.Drawing.Point(595, 26);
-            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(271, 194);
             this.panel3.TabIndex = 5;
@@ -399,7 +399,7 @@
             this.panel4.Controls.Add(this.label16);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Location = new System.Drawing.Point(25, 232);
-            this.panel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel4.Margin = new System.Windows.Forms.Padding(6);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(275, 194);
             this.panel4.TabIndex = 6;
@@ -441,7 +441,7 @@
             this.panel5.Controls.Add(this.label19);
             this.panel5.Controls.Add(this.label20);
             this.panel5.Location = new System.Drawing.Point(312, 232);
-            this.panel5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel5.Margin = new System.Windows.Forms.Padding(6);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(271, 194);
             this.panel5.TabIndex = 6;
@@ -480,11 +480,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1722, 1178);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "RentalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "대여반납관리";

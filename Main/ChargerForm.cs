@@ -13,12 +13,17 @@ namespace Main
 
             dgvCharger.AutoGenerateColumns = true;
 
+            // 🔥 지점명, 단가는 수정 못 하게
+            //txtLocationName.ReadOnly = true;
+            //txtPrice.ReadOnly = true;
+
             LoadStatusList();
             LoadTypeList();
             LoadChargerList();
 
             dgvCharger.CellClick += dgvCharger_CellClick;
         }
+
 
         //------------------------------------------------------------
         // 상태 목록
@@ -51,15 +56,19 @@ namespace Main
                 conn.Open();
 
                 string sql = @"
-                    SELECT 
-                        charger_id,
-                        location_id,
-                        rate_id,
-                        status,
-                        battery_remain,
-                        charger_type
-                    FROM charger
-                    ORDER BY charger_id";
+            SELECT 
+                c.charger_id,
+                c.location_id,
+                l.location_name,
+                c.rate_id,
+                r.price,
+                c.status,
+                c.battery_remain,
+                c.charger_type
+            FROM charger c
+            LEFT JOIN location l ON c.location_id = l.location_id
+            LEFT JOIN rate r ON c.rate_id = r.rate_id
+            ORDER BY c.charger_id";
 
                 OracleDataAdapter da = new OracleDataAdapter(sql, conn);
                 DataTable dt = new DataTable();
@@ -69,12 +78,18 @@ namespace Main
             }
 
             dgvCharger.Columns["CHARGER_ID"].HeaderText = "ID";
-            dgvCharger.Columns["LOCATION_ID"].HeaderText = "위치 ID";
+            dgvCharger.Columns["LOCATION_ID"].HeaderText = "지점 ID";
+            dgvCharger.Columns["LOCATION_NAME"].HeaderText = "지점명";
             dgvCharger.Columns["RATE_ID"].HeaderText = "단가 ID";
+            dgvCharger.Columns["PRICE"].HeaderText = "단가";
             dgvCharger.Columns["STATUS"].HeaderText = "상태";
             dgvCharger.Columns["BATTERY_REMAIN"].HeaderText = "배터리(%)";
             dgvCharger.Columns["CHARGER_TYPE"].HeaderText = "유형";
+            dgvCharger.Columns["LOCATION_ID"].Visible = false;
+            dgvCharger.Columns["RATE_ID"].Visible = false;
+
         }
+
 
         //------------------------------------------------------------
         // 🔥 DataGridView 클릭 → 상세 정보에 반영
@@ -86,41 +101,56 @@ namespace Main
             DataGridViewRow row = dgvCharger.Rows[e.RowIndex];
 
             txtChargerId.Text = row.Cells["CHARGER_ID"].Value.ToString();
-            txtLocationId.Text = row.Cells["LOCATION_ID"].Value.ToString();
-            txtRateId.Text = row.Cells["RATE_ID"].Value.ToString();
+            txtLocationName.Text = row.Cells["LOCATION_NAME"].Value.ToString();
+            txtPrice.Text = row.Cells["PRICE"].Value.ToString();
             txtBattery.Text = row.Cells["BATTERY_REMAIN"].Value.ToString();
 
             cmbChargerStatus.Text = row.Cells["STATUS"].Value.ToString();
             cmbChargerType.Text = row.Cells["CHARGER_TYPE"].Value.ToString();
         }
 
+
+
+
         //------------------------------------------------------------
         // 🔥 충전기 추가
         //------------------------------------------------------------
         private void btnChargerAdd_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtLocationId.Text) ||
-         string.IsNullOrWhiteSpace(txtRateId.Text) ||
-         string.IsNullOrWhiteSpace(cmbChargerType.Text))
-            {
-                MessageBox.Show("위치ID / 단가ID / 유형은 반드시 입력해야 합니다.");
-                return;
-            }
-
-            int battery = txtBattery.Text == "" ? 100 : int.Parse(txtBattery.Text);
-
             using (OracleConnection conn = DB.GetConn())
             {
                 conn.Open();
 
+                // -----------------------------
+                // 1) location_id 조회
+                // -----------------------------
+                string sqlLoc = "SELECT location_id FROM location WHERE location_name = :name";
+                OracleCommand cmdLoc = new OracleCommand(sqlLoc, conn);
+                cmdLoc.Parameters.Add(":name", txtLocationName.Text);
+                int locationId = Convert.ToInt32(cmdLoc.ExecuteScalar());
+
+                // -----------------------------
+                // 2) rate_id 조회
+                // -----------------------------
+                string sqlRate = "SELECT rate_id FROM rate WHERE price = :price";
+                OracleCommand cmdRate = new OracleCommand(sqlRate, conn);
+                cmdRate.Parameters.Add(":price", txtPrice.Text);
+                int rateId = Convert.ToInt32(cmdRate.ExecuteScalar());
+
+                int battery = txtBattery.Text == "" ? 100 : int.Parse(txtBattery.Text);
+
+                // -----------------------------
+                // 3) charger 테이블에 INSERT
+                // -----------------------------
                 string sql = @"
             INSERT INTO charger
-            (charger_id, location_id, rate_id, status, battery_remain, charger_type)
-            VALUES (SEQ_CHARGER.NEXTVAL, :loc, :rate, '대기', :battery, :type)";
+                (charger_id, location_id, rate_id, status, battery_remain, charger_type)
+            VALUES 
+                (SEQ_CHARGER.NEXTVAL, :loc, :rate, '대기', :battery, :type)";
 
                 OracleCommand cmd = new OracleCommand(sql, conn);
-                cmd.Parameters.Add(":loc", txtLocationId.Text);
-                cmd.Parameters.Add(":rate", txtRateId.Text);
+                cmd.Parameters.Add(":loc", locationId);
+                cmd.Parameters.Add(":rate", rateId);
                 cmd.Parameters.Add(":battery", battery);
                 cmd.Parameters.Add(":type", cmbChargerType.Text);
 
@@ -131,34 +161,42 @@ namespace Main
             LoadChargerList();
         }
 
+
         //------------------------------------------------------------
         // 🔥 충전기 수정
         //------------------------------------------------------------
         private void btnChargerUpdate_Click_1(object sender, EventArgs e)
         {
-            if (txtChargerId.Text == "")
-            {
-                MessageBox.Show("수정할 충전기를 선택하세요.");
-                return;
-            }
-
             using (OracleConnection conn = DB.GetConn())
             {
                 conn.Open();
 
+                // 1) location_id 조회
+                string sqlLoc = "SELECT location_id FROM location WHERE location_name = :name";
+                OracleCommand cmdLoc = new OracleCommand(sqlLoc, conn);
+                cmdLoc.Parameters.Add(":name", txtLocationName.Text);
+                int locationId = Convert.ToInt32(cmdLoc.ExecuteScalar());
+
+                // 2) rate_id 조회
+                string sqlRate = "SELECT rate_id FROM rate WHERE price = :price";
+                OracleCommand cmdRate = new OracleCommand(sqlRate, conn);
+                cmdRate.Parameters.Add(":price", txtPrice.Text);
+                int rateId = Convert.ToInt32(cmdRate.ExecuteScalar());
+
+                // 3) UPDATE 요청
                 string sql = @"
-                    UPDATE charger
-                    SET 
-                        location_id = :loc,
-                        rate_id = :rate,
-                        status = :status,
-                        battery_remain = :battery,
-                        charger_type = :type
-                    WHERE charger_id = :id";
+            UPDATE charger
+            SET 
+                location_id = :loc,
+                rate_id = :rate,
+                status = :status,
+                battery_remain = :battery,
+                charger_type = :type
+            WHERE charger_id = :id";
 
                 OracleCommand cmd = new OracleCommand(sql, conn);
-                cmd.Parameters.Add(":loc", txtLocationId.Text);
-                cmd.Parameters.Add(":rate", txtRateId.Text);
+                cmd.Parameters.Add(":loc", locationId);
+                cmd.Parameters.Add(":rate", rateId);
                 cmd.Parameters.Add(":status", cmbChargerStatus.Text);
                 cmd.Parameters.Add(":battery", txtBattery.Text);
                 cmd.Parameters.Add(":type", cmbChargerType.Text);
@@ -167,9 +205,10 @@ namespace Main
                 cmd.ExecuteNonQuery();
             }
 
-            MessageBox.Show("충전기 정보 수정 완료!");
+            MessageBox.Show("충전기 수정 완료!");
             LoadChargerList();
         }
+
 
         //------------------------------------------------------------
         // 🔥 충전기 삭제
@@ -229,6 +268,11 @@ namespace Main
         {
             new Start().Show();
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

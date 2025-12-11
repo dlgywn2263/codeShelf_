@@ -71,8 +71,7 @@
             this.종료ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1824, 53);
+            this.menuStrip1.Size = new System.Drawing.Size(2233, 53);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -133,11 +132,11 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.Location = new System.Drawing.Point(1218, 132);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(1499, 141);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(581, 694);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(698, 848);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "충전기 상세 정보";
@@ -146,7 +145,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(72, 274);
+            this.label4.Location = new System.Drawing.Point(81, 302);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 45);
@@ -156,17 +155,17 @@
             // txtFee3
             // 
             this.txtFee3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtFee3.Location = new System.Drawing.Point(282, 352);
-            this.txtFee3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFee3.Location = new System.Drawing.Point(255, 388);
+            this.txtFee3.Margin = new System.Windows.Forms.Padding(2);
             this.txtFee3.Name = "txtFee3";
-            this.txtFee3.Size = new System.Drawing.Size(225, 50);
+            this.txtFee3.Size = new System.Drawing.Size(397, 50);
             this.txtFee3.TabIndex = 22;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(72, 360);
+            this.label5.Location = new System.Drawing.Point(81, 388);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 45);
@@ -176,28 +175,28 @@
             // txtFee2
             // 
             this.txtFee2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtFee2.Location = new System.Drawing.Point(282, 268);
-            this.txtFee2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFee2.Location = new System.Drawing.Point(255, 304);
+            this.txtFee2.Margin = new System.Windows.Forms.Padding(2);
             this.txtFee2.Name = "txtFee2";
-            this.txtFee2.Size = new System.Drawing.Size(225, 50);
+            this.txtFee2.Size = new System.Drawing.Size(397, 50);
             this.txtFee2.TabIndex = 20;
             // 
             // txtOverFee
             // 
             this.txtOverFee.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtOverFee.Location = new System.Drawing.Point(282, 428);
-            this.txtOverFee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOverFee.Location = new System.Drawing.Point(255, 464);
+            this.txtOverFee.Margin = new System.Windows.Forms.Padding(2);
             this.txtOverFee.Name = "txtOverFee";
-            this.txtOverFee.Size = new System.Drawing.Size(225, 50);
+            this.txtOverFee.Size = new System.Drawing.Size(397, 50);
             this.txtOverFee.TabIndex = 18;
             // 
             // txtBaseFee
             // 
             this.txtBaseFee.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtBaseFee.Location = new System.Drawing.Point(282, 188);
-            this.txtBaseFee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBaseFee.Location = new System.Drawing.Point(255, 224);
+            this.txtBaseFee.Margin = new System.Windows.Forms.Padding(2);
             this.txtBaseFee.Name = "txtBaseFee";
-            this.txtBaseFee.Size = new System.Drawing.Size(225, 50);
+            this.txtBaseFee.Size = new System.Drawing.Size(397, 50);
             this.txtBaseFee.TabIndex = 12;
             // 
             // cmbRateType
@@ -207,20 +206,20 @@
             "고속"});
             this.cmbRateType.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cmbRateType.FormattingEnabled = true;
-            this.cmbRateType.Location = new System.Drawing.Point(282, 102);
-            this.cmbRateType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbRateType.Location = new System.Drawing.Point(255, 138);
+            this.cmbRateType.Margin = new System.Windows.Forms.Padding(4);
             this.cmbRateType.Name = "cmbRateType";
-            this.cmbRateType.Size = new System.Drawing.Size(225, 53);
+            this.cmbRateType.Size = new System.Drawing.Size(397, 53);
             this.cmbRateType.TabIndex = 17;
             // 
             // btnRateDelete
             // 
             this.btnRateDelete.BackColor = System.Drawing.Color.LightGray;
             this.btnRateDelete.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnRateDelete.Location = new System.Drawing.Point(396, 568);
-            this.btnRateDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRateDelete.Location = new System.Drawing.Point(461, 633);
+            this.btnRateDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnRateDelete.Name = "btnRateDelete";
-            this.btnRateDelete.Size = new System.Drawing.Size(154, 78);
+            this.btnRateDelete.Size = new System.Drawing.Size(191, 110);
             this.btnRateDelete.TabIndex = 16;
             this.btnRateDelete.Text = "삭제";
             this.btnRateDelete.UseVisualStyleBackColor = false;
@@ -230,10 +229,10 @@
             // 
             this.btnRateUpdate.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnRateUpdate.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnRateUpdate.Location = new System.Drawing.Point(217, 568);
-            this.btnRateUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRateUpdate.Location = new System.Drawing.Point(250, 633);
+            this.btnRateUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnRateUpdate.Name = "btnRateUpdate";
-            this.btnRateUpdate.Size = new System.Drawing.Size(154, 78);
+            this.btnRateUpdate.Size = new System.Drawing.Size(191, 110);
             this.btnRateUpdate.TabIndex = 15;
             this.btnRateUpdate.Text = "수정";
             this.btnRateUpdate.UseVisualStyleBackColor = false;
@@ -243,10 +242,10 @@
             // 
             this.btnRateAdd.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnRateAdd.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnRateAdd.Location = new System.Drawing.Point(41, 568);
-            this.btnRateAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRateAdd.Location = new System.Drawing.Point(45, 633);
+            this.btnRateAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnRateAdd.Name = "btnRateAdd";
-            this.btnRateAdd.Size = new System.Drawing.Size(154, 78);
+            this.btnRateAdd.Size = new System.Drawing.Size(191, 110);
             this.btnRateAdd.TabIndex = 14;
             this.btnRateAdd.Text = "추가";
             this.btnRateAdd.UseVisualStyleBackColor = false;
@@ -256,7 +255,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(71, 436);
+            this.label3.Location = new System.Drawing.Point(80, 464);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(178, 45);
@@ -267,7 +266,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(72, 196);
+            this.label2.Location = new System.Drawing.Point(81, 224);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 45);
@@ -278,7 +277,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(72, 108);
+            this.label1.Location = new System.Drawing.Point(81, 136);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 45);
@@ -288,12 +287,12 @@
             // dgvRate
             // 
             this.dgvRate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRate.Location = new System.Drawing.Point(30, 66);
-            this.dgvRate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvRate.Location = new System.Drawing.Point(34, 49);
+            this.dgvRate.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRate.Name = "dgvRate";
             this.dgvRate.RowHeadersWidth = 82;
             this.dgvRate.RowTemplate.Height = 37;
-            this.dgvRate.Size = new System.Drawing.Size(1094, 668);
+            this.dgvRate.Size = new System.Drawing.Size(1380, 855);
             this.dgvRate.TabIndex = 12;
             // 
             // groupBox2
@@ -301,10 +300,10 @@
             this.groupBox2.Controls.Add(this.dgvRate);
             this.groupBox2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.Location = new System.Drawing.Point(24, 92);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(1161, 778);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(1445, 936);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "요금 목록";
@@ -314,11 +313,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1824, 908);
+            this.ClientSize = new System.Drawing.Size(2233, 1070);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RateForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "단가관리";

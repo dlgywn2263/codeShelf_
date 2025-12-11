@@ -240,7 +240,6 @@
             this.Controls.Add(this.groupBoxPeriod);
             this.Controls.Add(this.dgvSettlement);
             this.Name = "SettlementForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "정산관리";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSettlement)).EndInit();
             this.groupBoxPeriod.ResumeLayout(false);

@@ -58,9 +58,9 @@
             this.groupBox2.Controls.Add(this.btnPreference);
             this.groupBox2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.Location = new System.Drawing.Point(1436, 550);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox2.Size = new System.Drawing.Size(726, 418);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
@@ -70,7 +70,7 @@
             // 
             this.btnAvgRent.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnAvgRent.Location = new System.Drawing.Point(58, 82);
-            this.btnAvgRent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnAvgRent.Margin = new System.Windows.Forms.Padding(6);
             this.btnAvgRent.Name = "btnAvgRent";
             this.btnAvgRent.Size = new System.Drawing.Size(282, 122);
             this.btnAvgRent.TabIndex = 16;
@@ -82,7 +82,7 @@
             // 
             this.btnFailureRate.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnFailureRate.Location = new System.Drawing.Point(379, 82);
-            this.btnFailureRate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnFailureRate.Margin = new System.Windows.Forms.Padding(6);
             this.btnFailureRate.Name = "btnFailureRate";
             this.btnFailureRate.Size = new System.Drawing.Size(282, 122);
             this.btnFailureRate.TabIndex = 17;
@@ -94,7 +94,7 @@
             // 
             this.btnAvgFee.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnAvgFee.Location = new System.Drawing.Point(58, 242);
-            this.btnAvgFee.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnAvgFee.Margin = new System.Windows.Forms.Padding(6);
             this.btnAvgFee.Name = "btnAvgFee";
             this.btnAvgFee.Size = new System.Drawing.Size(282, 122);
             this.btnAvgFee.TabIndex = 18;
@@ -106,7 +106,7 @@
             // 
             this.btnPreference.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnPreference.Location = new System.Drawing.Point(379, 238);
-            this.btnPreference.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnPreference.Margin = new System.Windows.Forms.Padding(6);
             this.btnPreference.Name = "btnPreference";
             this.btnPreference.Size = new System.Drawing.Size(282, 122);
             this.btnPreference.TabIndex = 19;
@@ -119,9 +119,9 @@
             this.groupBox3.Controls.Add(this.chartStats);
             this.groupBox3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.Location = new System.Drawing.Point(59, 74);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox3.Size = new System.Drawing.Size(1332, 724);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
@@ -134,7 +134,7 @@
             legend1.Name = "Legend1";
             this.chartStats.Legends.Add(legend1);
             this.chartStats.Location = new System.Drawing.Point(48, 56);
-            this.chartStats.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chartStats.Margin = new System.Windows.Forms.Padding(6);
             this.chartStats.Name = "chartStats";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -152,9 +152,9 @@
             this.groupBox1.Controls.Add(this.lblAvgFee);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(1436, 74);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox1.Size = new System.Drawing.Size(726, 436);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
@@ -209,7 +209,7 @@
             this.btnBack.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnBack.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnBack.Location = new System.Drawing.Point(1064, 846);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(6);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(279, 122);
             this.btnBack.TabIndex = 15;
@@ -221,12 +221,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(2262, 1038);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "StatsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "통계관리";

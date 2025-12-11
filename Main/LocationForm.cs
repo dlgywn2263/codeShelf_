@@ -194,5 +194,21 @@ namespace Main
             main.Show();
             this.Close();
         }
+
+        private void txtLocationName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //private void btnBack_Click(object sender, EventArgs e)
+        //{
+        //    new MainForm().Show();
+        //    this.Close();
+        //}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new MainForm().Show();
+            this.Close();
+        }
     }
 }
