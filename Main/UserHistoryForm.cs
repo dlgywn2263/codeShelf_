@@ -73,23 +73,25 @@ namespace Main
                 string keyword = txtSearch.Text.Trim();
                 string orderBy = "ORDER BY r.rental_id DESC";
 
-                // 🔥 정렬 조건 적용
+                // =========================
+                // 🔥 정렬 조건
+                // =========================
                 switch (cbSort.SelectedItem?.ToString())
                 {
                     case "오래된순":
                         orderBy = "ORDER BY r.rental_id ASC";
                         break;
-
                     case "요금 높은순":
                         orderBy = "ORDER BY r.charge_amount DESC";
                         break;
-
                     case "요금 낮은순":
                         orderBy = "ORDER BY r.charge_amount ASC";
                         break;
                 }
 
-                // 🔥 기간 필터링 조건
+                // =========================
+                // 🔥 기간 필터
+                // =========================
                 string dateFilter = "";
                 DateTime today = DateTime.Today;
 
@@ -105,49 +107,89 @@ namespace Main
 
                     case "이번 주":
                         dateFilter =
-                            $" AND r.rental_time >= TO_DATE('{weekStart:yyyy-MM-dd}', 'YYYY-MM-DD') " +
-                            $" AND r.rental_time < TO_DATE('{weekStart.AddDays(7):yyyy-MM-dd}', 'YYYY-MM-DD') ";
+                            $" AND r.rental_time >= TO_DATE('{weekStart:yyyy-MM-dd}', 'YYYY-MM-DD')" +
+                            $" AND r.rental_time < TO_DATE('{weekStart.AddDays(7):yyyy-MM-dd}', 'YYYY-MM-DD')";
                         break;
 
                     case "이번 달":
                         dateFilter =
-                            $" AND r.rental_time >= TO_DATE('{monthStart:yyyy-MM-dd}', 'YYYY-MM-DD') " +
-                            $" AND r.rental_time < ADD_MONTHS(TO_DATE('{monthStart:yyyy-MM-dd}', 'YYYY-MM-DD'), 1) ";
+                            $" AND r.rental_time >= TO_DATE('{monthStart:yyyy-MM-dd}', 'YYYY-MM-DD')" +
+                            $" AND r.rental_time < ADD_MONTHS(TO_DATE('{monthStart:yyyy-MM-dd}', 'YYYY-MM-DD'), 1)";
                         break;
                 }
 
+                // =========================
+                // 🔥 검색어가 반납 / 미반납인지 판별
+                // =========================
+                string specialFilter = "";
+                bool isReturnKeyword = false;
+
+                if (keyword == "반납")
+                {
+                    specialFilter = " AND r.return_time IS NOT NULL ";
+                    isReturnKeyword = true;
+                }
+                else if (keyword == "미반납")
+                {
+                    specialFilter = " AND r.return_time IS NULL ";
+                    isReturnKeyword = true;
+                }
+
+                // =========================
+                // 🔥 일반 검색 조건 (반납/미반납 아닐 때만)
+                // =========================
+                string searchCondition = "";
+
+                if (!isReturnKeyword && keyword != "")
+                {
+                    searchCondition = @"
+                AND (
+                    c.charger_type LIKE '%' || :keyword || '%' OR
+                    TO_CHAR(r.rental_time, 'YYYY-MM-DD HH24:MI') LIKE '%' || :keyword || '%' OR
+                    TO_CHAR(r.return_time, 'YYYY-MM-DD HH24:MI') LIKE '%' || :keyword || '%' OR
+                    TO_CHAR(r.charge_amount) LIKE '%' || :keyword || '%'
+                )
+            ";
+                }
+
+                // =========================
+                // 🔥 최종 SQL
+                // =========================
                 string sql = $@"
-                    SELECT 
-                        r.rental_id AS ""대여번호"",
-                        c.charger_type AS ""유형"",
-                        r.rental_time AS ""대여시간"",
-                        r.return_time AS ""반납시간"",
-                        r.charge_amount AS ""요금""
-                    FROM rental r
-                    JOIN charger c ON r.charger_id = c.charger_id
-                    WHERE r.member_id = :mid
-                      AND (
-                            c.charger_type LIKE '%' || :keyword || '%' OR
-                            TO_CHAR(r.rental_time, 'YYYY-MM-DD HH24:MI') LIKE '%' || :keyword || '%' OR
-                            TO_CHAR(r.return_time, 'YYYY-MM-DD HH24:MI') LIKE '%' || :keyword || '%' OR
-                            TO_CHAR(r.charge_amount) LIKE '%' || :keyword || '%'
-                          )
-                      {dateFilter}
-                    {orderBy}
-                ";
+            SELECT 
+                r.rental_id AS ""대여번호"",
+                c.charger_type AS ""유형"",
+                r.rental_time AS ""대여시간"",
+                r.return_time AS ""반납시간"",
+                r.charge_amount AS ""요금""
+            FROM rental r
+            JOIN charger c ON r.charger_id = c.charger_id
+            WHERE r.member_id = :mid
+              {specialFilter}
+              {searchCondition}
+              {dateFilter}
+            {orderBy}
+        ";
 
                 using (OracleDataAdapter da = new OracleDataAdapter(sql, conn))
                 {
                     da.SelectCommand.Parameters.Add(":mid", UserSession.MemberId);
-                    da.SelectCommand.Parameters.Add(":keyword", keyword);
+
+                    // keyword 파라미터는 일반 검색일 때만 사용
+                    if (!isReturnKeyword && keyword != "")
+                    {
+                        da.SelectCommand.Parameters.Add(":keyword", keyword);
+                    }
 
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
                     dgvHistory.DataSource = dt;
+                    dgvHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
                 }
             }
         }
+
 
         // =============================================
         // 🔥 이벤트 핸들러
