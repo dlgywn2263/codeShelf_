@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build 결과물
+bin/
+obj/
+
+# Debug / Release
+Debug/
+Release/
+
+# 실행 파일
+*.exe
+*.pdb
+
+# NuGet
+packages/
+
+# 기타
+*.cache
