@@ -293,6 +293,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "관리자메인화면";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -322,10 +323,10 @@
         private System.Windows.Forms.Button btnLocation;
         private System.Windows.Forms.Button btnBrokenManage;
         private System.Windows.Forms.Button btnSettlement;
-        private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.Label lblWait;
         private System.Windows.Forms.Label lblDueToday;
         private System.Windows.Forms.Label lblLate;
+        private System.Windows.Forms.Button btnReload;
     }
 }
 

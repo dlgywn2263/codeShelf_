@@ -131,24 +131,28 @@ namespace Main
         private void CalculateUsageAndPrice()
         {
             DateTime now = DateTime.Now;
-            TimeSpan used = now - rentalTime;
 
+            // 실제 사용 시간
+            TimeSpan used = now - rentalTime;
             double usedHours = used.TotalHours;
 
-            // UI 표시용
-            TxtUsedTime.Text = $"{Math.Ceiling(usedHours)}시간 (실제 {usedHours:F1}시간)";
+            TxtUsedTime.Text = $"{used.TotalHours:F1}시간";
 
-            // ⭐ 15분 유예 포함 허용 시간
-            double allowedHours = reservedHours + 0.25;
+            // 🔥 예약 종료 시각
+            DateTime expectedReturn = rentalTime.AddHours(reservedHours);
+
+            // 🔥 10분 유예 포함
+            DateTime lateStartTime = expectedReturn.AddMinutes(10);
 
             int lateFee = 0;
 
-            if (usedHours > allowedHours)
+            if (now > lateStartTime)
             {
-                double overdueHours = usedHours - allowedHours;
+                // 🔥 연체된 시간 (분 단위)
+                TimeSpan overdue = now - lateStartTime;
 
-                // 연체는 시간 단위 올림
-                int chargedLateHours = (int)Math.Ceiling(overdueHours);
+                // 🔥 연체는 "시간 단위 올림"
+                int chargedLateHours = (int)Math.Ceiling(overdue.TotalHours);
 
                 lateFee = chargedLateHours * latePrice;
             }
@@ -159,6 +163,7 @@ namespace Main
             TxtLateFee.Text = lateFee.ToString();
             TxtFinalPrice.Text = finalPrice.ToString();
         }
+
 
 
 

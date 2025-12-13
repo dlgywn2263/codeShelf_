@@ -44,11 +44,11 @@
             // dgvSettlement
             // 
             this.dgvSettlement.ColumnHeadersHeight = 46;
-            this.dgvSettlement.Location = new System.Drawing.Point(36, 80);
+            this.dgvSettlement.Location = new System.Drawing.Point(12, 80);
             this.dgvSettlement.Name = "dgvSettlement";
             this.dgvSettlement.RowHeadersWidth = 51;
             this.dgvSettlement.RowTemplate.Height = 27;
-            this.dgvSettlement.Size = new System.Drawing.Size(1284, 755);
+            this.dgvSettlement.Size = new System.Drawing.Size(1726, 1004);
             this.dgvSettlement.TabIndex = 0;
             // 
             // groupBoxPeriod
@@ -59,7 +59,7 @@
             this.groupBoxPeriod.Controls.Add(this.label2);
             this.groupBoxPeriod.Controls.Add(this.label1);
             this.groupBoxPeriod.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBoxPeriod.Location = new System.Drawing.Point(1353, 79);
+            this.groupBoxPeriod.Location = new System.Drawing.Point(1761, 101);
             this.groupBoxPeriod.Name = "groupBoxPeriod";
             this.groupBoxPeriod.Size = new System.Drawing.Size(579, 287);
             this.groupBoxPeriod.TabIndex = 1;
@@ -123,16 +123,16 @@
             this.groupBoxSummary.Controls.Add(this.label4);
             this.groupBoxSummary.Controls.Add(this.label3);
             this.groupBoxSummary.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBoxSummary.Location = new System.Drawing.Point(1353, 409);
+            this.groupBoxSummary.Location = new System.Drawing.Point(1761, 431);
             this.groupBoxSummary.Name = "groupBoxSummary";
-            this.groupBoxSummary.Size = new System.Drawing.Size(664, 440);
+            this.groupBoxSummary.Size = new System.Drawing.Size(616, 440);
             this.groupBoxSummary.TabIndex = 2;
             this.groupBoxSummary.TabStop = false;
             this.groupBoxSummary.Text = "요약 정보";
             // 
             // txtAvgPrice
             // 
-            this.txtAvgPrice.Location = new System.Drawing.Point(302, 354);
+            this.txtAvgPrice.Location = new System.Drawing.Point(280, 356);
             this.txtAvgPrice.Name = "txtAvgPrice";
             this.txtAvgPrice.ReadOnly = true;
             this.txtAvgPrice.Size = new System.Drawing.Size(309, 50);
@@ -141,7 +141,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7.Location = new System.Drawing.Point(43, 360);
+            this.label7.Location = new System.Drawing.Point(21, 362);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(184, 44);
             this.label7.TabIndex = 1;
@@ -149,7 +149,7 @@
             // 
             // txtTotalSum
             // 
-            this.txtTotalSum.Location = new System.Drawing.Point(302, 280);
+            this.txtTotalSum.Location = new System.Drawing.Point(280, 282);
             this.txtTotalSum.Name = "txtTotalSum";
             this.txtTotalSum.ReadOnly = true;
             this.txtTotalSum.Size = new System.Drawing.Size(309, 50);
@@ -158,7 +158,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(43, 280);
+            this.label6.Location = new System.Drawing.Point(21, 282);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 45);
             this.label6.TabIndex = 3;
@@ -166,7 +166,7 @@
             // 
             // txtLateSum
             // 
-            this.txtLateSum.Location = new System.Drawing.Point(302, 201);
+            this.txtLateSum.Location = new System.Drawing.Point(280, 203);
             this.txtLateSum.Name = "txtLateSum";
             this.txtLateSum.ReadOnly = true;
             this.txtLateSum.Size = new System.Drawing.Size(309, 50);
@@ -174,7 +174,7 @@
             // 
             // txtSumPrice
             // 
-            this.txtSumPrice.Location = new System.Drawing.Point(302, 127);
+            this.txtSumPrice.Location = new System.Drawing.Point(280, 129);
             this.txtSumPrice.Name = "txtSumPrice";
             this.txtSumPrice.ReadOnly = true;
             this.txtSumPrice.Size = new System.Drawing.Size(309, 50);
@@ -182,7 +182,7 @@
             // 
             // txtTotalCount
             // 
-            this.txtTotalCount.Location = new System.Drawing.Point(302, 51);
+            this.txtTotalCount.Location = new System.Drawing.Point(280, 53);
             this.txtTotalCount.Name = "txtTotalCount";
             this.txtTotalCount.ReadOnly = true;
             this.txtTotalCount.Size = new System.Drawing.Size(309, 50);
@@ -192,7 +192,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(43, 204);
+            this.label5.Location = new System.Drawing.Point(21, 206);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(199, 50);
             this.label5.TabIndex = 7;
@@ -201,7 +201,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(43, 130);
+            this.label4.Location = new System.Drawing.Point(21, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(199, 48);
             this.label4.TabIndex = 8;
@@ -210,7 +210,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(43, 57);
+            this.label3.Location = new System.Drawing.Point(21, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 44);
             this.label3.TabIndex = 9;
@@ -220,9 +220,9 @@
             // 
             this.btnBack.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnBack.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnBack.Location = new System.Drawing.Point(1666, 868);
+            this.btnBack.Location = new System.Drawing.Point(2074, 890);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(351, 107);
+            this.btnBack.Size = new System.Drawing.Size(303, 104);
             this.btnBack.TabIndex = 0;
             this.btnBack.Text = "돌아가기";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -234,7 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(2072, 1053);
+            this.ClientSize = new System.Drawing.Size(2395, 1128);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBoxSummary);
             this.Controls.Add(this.groupBoxPeriod);
