@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Data;
 using System.Windows.Forms;
-using Oracle.ManagedDataAccess.Client;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Main
 {
@@ -18,6 +19,8 @@ namespace Main
             InitializeComponent();
 
             dgvBroken.AutoGenerateColumns = true;
+            cmbFaultStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+
 
             // 상태 콤보박스 설정
             cmbFaultStatus.Items.Clear();
@@ -125,6 +128,9 @@ namespace Main
 
             if (dgvBroken.Columns["REPAIR_STATUS"] != null)
                 dgvBroken.Columns["REPAIR_STATUS"].HeaderText = "처리 상태";
+            if (dgvBroken.Columns["REPORT_TIME"] != null)
+                dgvBroken.Columns["REPORT_TIME"].HeaderText = "신고시간";
+
         }
 
         // ===========================================================
@@ -161,31 +167,18 @@ namespace Main
 
             DataGridViewRow row = dgvBroken.Rows[e.RowIndex];
 
-            object brokenVal = row.Cells["BROKEN_ID"].Value;
-            selectedBrokenId = (brokenVal == DBNull.Value || brokenVal == null)
-                ? -1
-                : Convert.ToInt32(brokenVal);
+            selectedBrokenId = Convert.ToInt32(row.Cells["BROKEN_ID"].Value);
 
-            object chargerVal = row.Cells["CHARGER_ID"].Value;
-            txtChargerId.Text = (chargerVal == DBNull.Value || chargerVal == null)
-                ? ""
-                : chargerVal.ToString();
+            txtChargerId.Text = row.Cells["CHARGER_ID"].Value?.ToString() ?? "";
 
-            object memberVal = row.Cells["MEMBER_ID"].Value;
-            if (memberVal == DBNull.Value || memberVal == null)
-            {
-                selectedMemberId = 0;
-                txtMemberId.Text = "";
-            }
-            else
-            {
-                selectedMemberId = Convert.ToInt32(memberVal);
-                txtMemberId.Text = selectedMemberId.ToString();
-            }
+            selectedMemberId = Convert.ToInt32(row.Cells["MEMBER_ID"].Value);
+            txtMemberId.Text = selectedMemberId == 0 ? "" : selectedMemberId.ToString();
 
+            // ✅ Text로 넣어도 DropDownList는 목록 값만 표시됨
             cmbFaultType.Text = row.Cells["SYMPTOM"].Value?.ToString() ?? "";
             txtFaultText.Text = row.Cells["REPAIR_DETAIL"].Value?.ToString() ?? "";
-            cmbFaultStatus.Text = row.Cells["REPAIR_STATUS"].Value?.ToString() ?? "";
+            cmbFaultStatus.Text = row.Cells["REPAIR_STATUS"].Value?.ToString() ?? "지연";
+
         }
 
         // ===========================================================
@@ -198,6 +191,31 @@ namespace Main
                 MessageBox.Show("신고 항목을 선택하세요.");
                 return;
             }
+            // ✅ 무조건 Text로 가져오기 (SelectedItem 쓰면 NULL 터짐)
+            string status = cmbFaultStatus.Text.Trim();
+            string symptom = cmbFaultType.Text.Trim();
+            string detail = txtFaultText.Text.Trim();
+            string chargerIdText = txtChargerId.Text.Trim();
+
+            // ✅ 필수값 검증
+            if (string.IsNullOrEmpty(chargerIdText))
+            {
+                MessageBox.Show("충전기 ID가 비어있습니다. 목록에서 다시 선택하세요.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(symptom))
+            {
+                MessageBox.Show("고장 유형을 선택/입력하세요.");
+                return;
+            }
+
+            // ✅ CHECK 제약(정상/폐기/지연) 방지
+            if (status != "정상" && status != "폐기" && status != "지연")
+            {
+                MessageBox.Show("처리 상태는 '정상/폐기/지연' 중 하나여야 합니다.");
+                return;
+            }
 
             using (OracleConnection conn = DB.GetConn())
             {
@@ -206,9 +224,7 @@ namespace Main
 
                 try
                 {
-                    // -------------------------------------------------------------------
-                    // 1) broken 상태 및 상세 내용 업데이트
-                    // -------------------------------------------------------------------
+                    // 1) broken 업데이트
                     string sql1 = @"
                         UPDATE broken
                         SET repair_status = :status,
@@ -217,40 +233,38 @@ namespace Main
                         WHERE broken_id = :bid
                     ";
 
-                    OracleCommand cmd1 = new OracleCommand(sql1, conn);
-                    cmd1.Transaction = tran;
-
-                    cmd1.Parameters.Add(":symptom", cmbFaultType.Text.Trim()); 
-                    cmd1.Parameters.Add(":status", cmbFaultStatus.Text.Trim());
-                    cmd1.Parameters.Add(":detail", txtFaultText.Text.Trim());
-                    cmd1.Parameters.Add(":bid", selectedBrokenId);
-
-                    cmd1.ExecuteNonQuery();
-
-
-                    // -------------------------------------------------------------------
-                    // 2) 충전기 상태 자동 변경 (정상 or 폐기 → 충전기 상태 '대기')
-                    // -------------------------------------------------------------------
-                    string newStatus = cmbFaultStatus.Text.Trim();
-
-                    if (newStatus == "정상" || newStatus == "폐기")
+                    using (OracleCommand cmd1 = new OracleCommand(sql1, conn))
                     {
-                        string sql3 = @"
-                            UPDATE charger
-                            SET status = '대기'
-                            WHERE charger_id = :cid
-                        ";
+                        cmd1.Transaction = tran;
+                        cmd1.Parameters.Add(":status", status);
+                        cmd1.Parameters.Add(":detail", detail);
+                        cmd1.Parameters.Add(":symptom", symptom);
+                        cmd1.Parameters.Add(":bid", selectedBrokenId);
+                        cmd1.ExecuteNonQuery();
+                    }
 
-                        OracleCommand cmd3 = new OracleCommand(sql3, conn);
+                    // 2) 충전기 상태 업데이트 (원하는 정책에 맞게)
+                    // 정상 -> 대기 / 지연 -> 고장 / 폐기 -> 고장(또는 폐기 상태 칼럼 있으면 그걸로)
+                    string chargerStatus =
+                        (status == "정상") ? "대기" :
+                        (status == "지연") ? "고장" :
+                        /* 폐기 */          "고장";
+
+                    string sql3 = @"
+                        UPDATE charger
+                        SET status = :cstatus
+                        WHERE charger_id = :cid
+                    ";
+
+                    using (OracleCommand cmd3 = new OracleCommand(sql3, conn))
+                    {
                         cmd3.Transaction = tran;
-                        cmd3.Parameters.Add(":cid", txtChargerId.Text.Trim());
+                        cmd3.Parameters.Add(":cstatus", chargerStatus);
+                        cmd3.Parameters.Add(":cid", Convert.ToInt32(chargerIdText));
                         cmd3.ExecuteNonQuery();
                     }
 
-
-                    // -------------------------------------------------------------------
-                    // 3) 신뢰도 차감 (회원 ID가 0인 경우 제외)
-                    // -------------------------------------------------------------------
+                    // 3) 신뢰도 차감
                     int minus = (int)numMinusCredibility.Value;
 
                     if (minus > 0 && selectedMemberId > 0)
@@ -261,35 +275,55 @@ namespace Main
                             WHERE member_id = :mid_val
                         ";
 
-                        OracleCommand cmd2 = new OracleCommand(sql2, conn);
-                        cmd2.Transaction = tran;
-                        cmd2.Parameters.Add(":minus_val", minus);
-                        cmd2.Parameters.Add(":mid_val", selectedMemberId);
+                        using (OracleCommand cmd2 = new OracleCommand(sql2, conn))
+                        {
+                            cmd2.Transaction = tran;
+                            cmd2.Parameters.Add(":minus_val", minus);
+                            cmd2.Parameters.Add(":mid_val", selectedMemberId);
+                            cmd2.ExecuteNonQuery();
+                        }
 
-                        cmd2.ExecuteNonQuery();
+                        // reliability 범위 보정(0~100) 필요하면 여기서 추가 가능
+                        string sqlFix = @"
+                            UPDATE member
+                            SET reliability = CASE
+                                WHEN reliability < 0 THEN 0
+                                WHEN reliability > 100 THEN 100
+                                ELSE reliability
+                            END
+                            WHERE member_id = :mid
+                        ";
+
+                        using (OracleCommand cmdFix = new OracleCommand(sqlFix, conn))
+                        {
+                            cmdFix.Transaction = tran;
+                            cmdFix.Parameters.Add(":mid", selectedMemberId);
+                            cmdFix.ExecuteNonQuery();
+                        }
+
+                        // 상태 자동 업데이트
+                        string sqlStatus = @"
+                            UPDATE member
+                            SET status = CASE
+                                            WHEN reliability <= 50 THEN '활동정지'
+                                            ELSE '활동'
+                                         END
+                            WHERE member_id = :mid
+                        ";
+
+                        using (OracleCommand cmdStatus = new OracleCommand(sqlStatus, conn))
+                        {
+                            cmdStatus.Transaction = tran;
+                            cmdStatus.Parameters.Add(":mid", selectedMemberId);
+                            cmdStatus.ExecuteNonQuery();
+                        }
                     }
 
-                    // 상태 자동 업데이트
-                    string sqlStatus = @"
-                        UPDATE member
-                        SET status = CASE
-                                        WHEN reliability <= 50 THEN '활동정지'
-                                        ELSE '활동'
-                                     END
-                        WHERE member_id = :mid
-                    ";
-
-                    if (selectedMemberId > 0)
-                    {
-                        OracleCommand cmdStatus = new OracleCommand(sqlStatus, conn);
-                        cmdStatus.Transaction = tran;
-                        cmdStatus.Parameters.Add(":mid", selectedMemberId);
-                        cmdStatus.ExecuteNonQuery();
-                    }
-
-                    // 성공 처리
                     tran.Commit();
                     MessageBox.Show("상태가 성공적으로 수정되었습니다!");
+
+                    LoadBrokenList();
+                    LoadStatusCounts();
                 }
                 catch (Exception ex)
                 {
@@ -297,8 +331,9 @@ namespace Main
                     MessageBox.Show("DB 오류: " + ex.Message);
                 }
             }
-            LoadBrokenList();
-            LoadStatusCounts();
+
+            //LoadBrokenList();
+            //LoadStatusCounts();
         }
 
         // 뒤로가기
@@ -312,11 +347,15 @@ namespace Main
         {
             // 입력 초기화
             selectedBrokenId = -1;
+            selectedMemberId = -1;
+
             txtChargerId.Clear();
             txtMemberId.Clear();
+            txtFaultText.Clear();
+
             cmbFaultType.SelectedIndex = -1;
             cmbFaultStatus.SelectedIndex = -1;
-            txtFaultText.Clear();
+            
             numMinusCredibility.Value = 0;
         }
 

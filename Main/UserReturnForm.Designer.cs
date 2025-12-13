@@ -41,6 +41,10 @@
             this.TxtFinalPrice = new System.Windows.Forms.TextBox();
             this.TxtUsedTime = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TxtLateFee = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtBasePrice = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -97,9 +101,9 @@
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.Location = new System.Drawing.Point(65, 92);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox2.Size = new System.Drawing.Size(1413, 920);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
@@ -109,7 +113,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(50, 58);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 23;
@@ -120,8 +124,8 @@
             // 
             this.BtnReturnDo.BackColor = System.Drawing.Color.LightGray;
             this.BtnReturnDo.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnReturnDo.Location = new System.Drawing.Point(245, 472);
-            this.BtnReturnDo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BtnReturnDo.Location = new System.Drawing.Point(247, 632);
+            this.BtnReturnDo.Margin = new System.Windows.Forms.Padding(6);
             this.BtnReturnDo.Name = "BtnReturnDo";
             this.BtnReturnDo.Size = new System.Drawing.Size(305, 144);
             this.BtnReturnDo.TabIndex = 4;
@@ -144,7 +148,7 @@
             // 
             this.LblFinalPrice.AutoSize = true;
             this.LblFinalPrice.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LblFinalPrice.Location = new System.Drawing.Point(33, 302);
+            this.LblFinalPrice.Location = new System.Drawing.Point(33, 491);
             this.LblFinalPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LblFinalPrice.Name = "LblFinalPrice";
             this.LblFinalPrice.Size = new System.Drawing.Size(249, 57);
@@ -154,8 +158,8 @@
             // TxtFinalPrice
             // 
             this.TxtFinalPrice.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.TxtFinalPrice.Location = new System.Drawing.Point(308, 296);
-            this.TxtFinalPrice.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TxtFinalPrice.Location = new System.Drawing.Point(308, 485);
+            this.TxtFinalPrice.Margin = new System.Windows.Forms.Padding(6);
             this.TxtFinalPrice.Name = "TxtFinalPrice";
             this.TxtFinalPrice.ReadOnly = true;
             this.TxtFinalPrice.Size = new System.Drawing.Size(398, 63);
@@ -165,7 +169,7 @@
             // 
             this.TxtUsedTime.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.TxtUsedTime.Location = new System.Drawing.Point(308, 146);
-            this.TxtUsedTime.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TxtUsedTime.Margin = new System.Windows.Forms.Padding(6);
             this.TxtUsedTime.Name = "TxtUsedTime";
             this.TxtUsedTime.ReadOnly = true;
             this.TxtUsedTime.Size = new System.Drawing.Size(398, 63);
@@ -173,6 +177,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TxtBasePrice);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.TxtLateFee);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.TxtFinalPrice);
             this.groupBox1.Controls.Add(this.TxtUsedTime);
             this.groupBox1.Controls.Add(this.BtnReturnDo);
@@ -180,13 +188,55 @@
             this.groupBox1.Controls.Add(this.LblFinalPrice);
             this.groupBox1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(1519, 188);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.groupBox1.Size = new System.Drawing.Size(760, 776);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox1.Size = new System.Drawing.Size(802, 839);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "충전기 반납하기";
+            // 
+            // TxtLateFee
+            // 
+            this.TxtLateFee.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtLateFee.Location = new System.Drawing.Point(308, 376);
+            this.TxtLateFee.Margin = new System.Windows.Forms.Padding(6);
+            this.TxtLateFee.Name = "TxtLateFee";
+            this.TxtLateFee.ReadOnly = true;
+            this.TxtLateFee.Size = new System.Drawing.Size(398, 63);
+            this.TxtLateFee.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(33, 382);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(249, 57);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "연체 요금 : ";
+            // 
+            // TxtBasePrice
+            // 
+            this.TxtBasePrice.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtBasePrice.Location = new System.Drawing.Point(308, 259);
+            this.TxtBasePrice.Margin = new System.Windows.Forms.Padding(6);
+            this.TxtBasePrice.Name = "TxtBasePrice";
+            this.TxtBasePrice.ReadOnly = true;
+            this.TxtBasePrice.Size = new System.Drawing.Size(398, 63);
+            this.TxtBasePrice.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(33, 265);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(249, 57);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "기본 요금 : ";
             // 
             // UserReturnForm
             // 
@@ -197,7 +247,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "UserReturnForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "반납";
@@ -226,5 +276,9 @@
         private System.Windows.Forms.TextBox TxtFinalPrice;
         private System.Windows.Forms.TextBox TxtUsedTime;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox TxtBasePrice;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox TxtLateFee;
+        private System.Windows.Forms.Label label1;
     }
 }
