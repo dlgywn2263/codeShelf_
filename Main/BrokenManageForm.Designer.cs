@@ -56,6 +56,15 @@
             this.pnlTotal = new System.Windows.Forms.Panel();
             this.Total = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.groupBoxPeriod = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.dtpEnd = new System.Windows.Forms.DateTimePicker();
+            this.dtpStart = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBroken)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -64,13 +73,15 @@
             this.pnlDone.SuspendLayout();
             this.pnlPending.SuspendLayout();
             this.pnlTotal.SuspendLayout();
+            this.groupBoxPeriod.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgvBroken);
             this.groupBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.Location = new System.Drawing.Point(19, 30);
+            this.groupBox1.Location = new System.Drawing.Point(21, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(862, 444);
             this.groupBox1.TabIndex = 0;
@@ -92,7 +103,7 @@
             // 
             this.BtnBack.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnBack.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnBack.Location = new System.Drawing.Point(1010, 532);
+            this.BtnBack.Location = new System.Drawing.Point(1082, 552);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(137, 51);
             this.BtnBack.TabIndex = 9;
@@ -117,7 +128,7 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox2.Location = new System.Drawing.Point(901, 30);
+            this.groupBox2.Location = new System.Drawing.Point(903, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(340, 444);
             this.groupBox2.TabIndex = 10;
@@ -267,7 +278,7 @@
             this.groupBox3.Controls.Add(this.pnlPending);
             this.groupBox3.Controls.Add(this.pnlTotal);
             this.groupBox3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox3.Location = new System.Drawing.Point(180, 483);
+            this.groupBox3.Location = new System.Drawing.Point(21, 465);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(533, 154);
             this.groupBox3.TabIndex = 11;
@@ -358,12 +369,112 @@
             this.label7.TabIndex = 20;
             this.label7.Text = "총 신고 개수";
             // 
+            // groupBoxPeriod
+            // 
+            this.groupBoxPeriod.Controls.Add(this.btnSearch);
+            this.groupBoxPeriod.Controls.Add(this.dtpEnd);
+            this.groupBoxPeriod.Controls.Add(this.dtpStart);
+            this.groupBoxPeriod.Controls.Add(this.label9);
+            this.groupBoxPeriod.Controls.Add(this.label11);
+            this.groupBoxPeriod.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBoxPeriod.Location = new System.Drawing.Point(571, 465);
+            this.groupBoxPeriod.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxPeriod.Name = "groupBoxPeriod";
+            this.groupBoxPeriod.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBoxPeriod.Size = new System.Drawing.Size(312, 154);
+            this.groupBoxPeriod.TabIndex = 21;
+            this.groupBoxPeriod.TabStop = false;
+            this.groupBoxPeriod.Text = "기간 선택";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSearch.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSearch.Location = new System.Drawing.Point(209, 102);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(88, 36);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "조회";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // dtpEnd
+            // 
+            this.dtpEnd.Location = new System.Drawing.Point(69, 69);
+            this.dtpEnd.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpEnd.Name = "dtpEnd";
+            this.dtpEnd.Size = new System.Drawing.Size(228, 29);
+            this.dtpEnd.TabIndex = 3;
+            // 
+            // dtpStart
+            // 
+            this.dtpStart.Location = new System.Drawing.Point(69, 36);
+            this.dtpStart.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpStart.Name = "dtpStart";
+            this.dtpStart.Size = new System.Drawing.Size(228, 29);
+            this.dtpStart.TabIndex = 2;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.Location = new System.Drawing.Point(19, 72);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 25);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "종료일:";
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label11.Location = new System.Drawing.Point(19, 36);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 25);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "시작일:";
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Location = new System.Drawing.Point(140, 28);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(176, 29);
+            this.cbStatus.TabIndex = 22;
+            this.cbStatus.SelectedIndexChanged += new System.EventHandler(this.cbStatus_SelectedIndexChanged);
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label12.Location = new System.Drawing.Point(50, 31);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 25);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "상태:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.cbStatus);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox4.Location = new System.Drawing.Point(903, 465);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(340, 72);
+            this.groupBox4.TabIndex = 23;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "간단 필터링";
+            // 
             // BrokenManageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1264, 530);
+            this.ClientSize = new System.Drawing.Size(1264, 589);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBoxPeriod);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.BtnBack);
@@ -382,6 +493,8 @@
             this.pnlPending.PerformLayout();
             this.pnlTotal.ResumeLayout(false);
             this.pnlTotal.PerformLayout();
+            this.groupBoxPeriod.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -416,5 +529,14 @@
         private System.Windows.Forms.Label Done;
         private System.Windows.Forms.Label Pending;
         private System.Windows.Forms.Label Total;
+        private System.Windows.Forms.GroupBox groupBoxPeriod;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DateTimePicker dtpEnd;
+        private System.Windows.Forms.DateTimePicker dtpStart;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cbStatus;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }

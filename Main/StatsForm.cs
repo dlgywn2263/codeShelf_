@@ -9,17 +9,24 @@ namespace Main
 {
     public partial class StatsForm : Form
     {
+        private DateTime currentStart;
+        private DateTime currentEnd;
+
         public StatsForm()
         {
             InitializeComponent();
             chartStats.Series.Clear();
-            LoadSummaryStats();
+
+            currentStart = DateTime.Today;
+            currentEnd = DateTime.Today.AddDays(1).AddSeconds(-1);
+
+            LoadSummaryStats(currentStart, currentEnd);
         }
 
         // =========================================
         //  📌 요약 정보 (상단 레이블들)
         // =========================================
-        private void LoadSummaryStats()
+        private void LoadSummaryStats(DateTime start, DateTime end)
         {
             using (OracleConnection conn = DB.GetConn())
             {
@@ -32,70 +39,55 @@ namespace Main
                     FROM (
                         SELECT COUNT(*) AS rent_cnt
                         FROM rental
+                        WHERE rental_time BETWEEN :startDate AND :endDate
                         GROUP BY member_id
                     )
                 ";
 
                 using (OracleCommand cmd = new OracleCommand(sqlAvgRent, conn))
                 {
-                    object r = cmd.ExecuteScalar();
+                    cmd.Parameters.Add(":startDate", start);
+                    cmd.Parameters.Add(":endDate", end);
 
-                    double avgRent = 0;
-                    if (r != DBNull.Value)
-                    {
-                        double.TryParse(r.ToString(), out avgRent);
-                    }
-
+                    double avgRent = Convert.ToDouble(cmd.ExecuteScalar());
                     lblAvgRent.Text = $"평균 대여 횟수 : {Math.Round(avgRent, 1)} 회";
                 }
 
                 // 2) 고장률 = (고장 충전기 수 / 전체 충전기 수) * 100
-                int brokenCount = 0;
-                int totalCharger = 0;
+                int broken = Convert.ToInt32(
+                    new OracleCommand("SELECT COUNT(*) FROM charger WHERE status='고장'", conn)
+                    .ExecuteScalar());
 
-                using (OracleCommand cmdBroken = new OracleCommand(
-                    "SELECT COUNT(*) FROM charger WHERE status = '고장'", conn))
-                {
-                    brokenCount = Convert.ToInt32(cmdBroken.ExecuteScalar());
-                }
+                 int total = Convert.ToInt32(
+                     new OracleCommand("SELECT COUNT(*) FROM charger", conn)
+                     .ExecuteScalar());
 
-                using (OracleCommand cmdTotal = new OracleCommand(
-                    "SELECT COUNT(*) FROM charger", conn))
-                {
-                    totalCharger = Convert.ToInt32(cmdTotal.ExecuteScalar());
-                }
-
-                double failRate = (totalCharger == 0)
-                    ? 0
-                    : brokenCount * 100.0 / totalCharger;
-
-                lblFailureRate.Text = $"고장률 : {Math.Round(failRate, 1)}%";
+                double rate = total == 0 ? 0 : broken * 100.0 / total;
+                lblFailureRate.Text = $"고장률 : {Math.Round(rate, 1)}%";
 
                 // 3) 평균 요금 (rental.charge_amount 사용)
                 string sqlAvgFee = @"
                     SELECT NVL(AVG(CAST(charge_amount AS BINARY_DOUBLE)), 0)
                     FROM rental
                     WHERE charge_amount IS NOT NULL
+                      AND return_time BETWEEN :startDate AND :endDate
                 ";
 
                 using (OracleCommand cmd = new OracleCommand(sqlAvgFee, conn))
                 {
-                    object r = cmd.ExecuteScalar();
-                    
-                    double avgFee = 0;
-                    if (r != DBNull.Value)
-                    {
-                        double.TryParse(r.ToString(), out avgFee);
-                    }
+                    cmd.Parameters.Add(":startDate", start);
+                    cmd.Parameters.Add(":endDate", end);
 
+                    double avgFee = Convert.ToDouble(cmd.ExecuteScalar());
                     lblAvgFee.Text = $"평균 요금 : {Math.Round(avgFee, 0):N0} 원";
                 }
 
                 // 4) 일반 / 고속 선호도
                 string sqlPref = @"
-                    SELECT c.charger_type, COUNT(*) AS cnt
+                    SELECT c.charger_type, COUNT(*)
                     FROM rental r
                     JOIN charger c ON r.charger_id = c.charger_id
+                    WHERE r.rental_time BETWEEN :startDate AND :endDate
                     GROUP BY c.charger_type
                 ";
 
@@ -103,23 +95,24 @@ namespace Main
                 int fast = 0;
 
                 using (OracleCommand cmd = new OracleCommand(sqlPref, conn))
-                using (OracleDataReader dr = cmd.ExecuteReader())
                 {
-                    while (dr.Read())
-                    {
-                        string type = dr.GetString(0);
-                        int cnt = dr.GetInt32(1);
+                    cmd.Parameters.Add(":startDate", start);
+                    cmd.Parameters.Add(":endDate", end);
 
-                        if (type == "일반") normal = cnt;
-                        else if (type == "고속") fast = cnt;
+                    using (OracleDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            if (dr.GetString(0) == "일반") normal = dr.GetInt32(1);
+                            else if (dr.GetString(0) == "고속") fast = dr.GetInt32(1);
+                        }
                     }
                 }
 
-                int total = normal + fast;
-                int pNormal = total == 0 ? 0 : (normal * 100 / total);
-                int pFast = total == 0 ? 0 : (fast * 100 / total);
-
-                lblPref.Text = $"일반/고속 선호도 : {pNormal}% / {pFast}%";
+                int sum = normal + fast;
+                lblPref.Text = sum == 0
+                    ? "일반/고속 선호도 : 0% / 0%"
+                    : $"일반/고속 선호도 : {normal * 100 / sum}% / {fast * 100 / sum}%";
             }
         }
 
@@ -133,8 +126,12 @@ namespace Main
             chartStats.Series.Clear();
             chartStats.Legends[0].Enabled = true;
 
-            // 축 색상
+            // 축 설명tats.ChartAreas[0];
             var ca = chartStats.ChartAreas[0];
+            ca.AxisX.Title = "회원 ID";
+            ca.AxisY.Title = "대여 횟수";
+
+            // 축 색상
             ca.AxisX.LineColor = Color.FromArgb(80, Color.Gray);
             ca.AxisY.LineColor = Color.FromArgb(80, Color.Gray);
             ca.AxisX.MajorGrid.LineColor = Color.FromArgb(50, Color.LightGray);
@@ -153,18 +150,22 @@ namespace Main
                 string sql = @"
                     SELECT member_id, COUNT(*) AS cnt
                     FROM rental
+                    WHERE rental_time BETWEEN :startDate AND :endDate
                     GROUP BY member_id
                     ORDER BY member_id
                 ";
 
                 using (OracleCommand cmd = new OracleCommand(sql, conn))
-                using (OracleDataReader dr = cmd.ExecuteReader())
                 {
-                    while (dr.Read())
+                    cmd.Parameters.Add(":startDate", currentStart);
+                    cmd.Parameters.Add(":endDate", currentEnd);
+
+                    using (OracleDataReader dr = cmd.ExecuteReader())
                     {
-                        int memberId = dr.GetInt32(0);
-                        int cnt = dr.GetInt32(1);
-                        s.Points.AddXY(memberId, cnt);
+                        while (dr.Read())
+                        {
+                            s.Points.AddXY(dr.GetInt32(0), dr.GetInt32(1));
+                        }
                     }
                 }
             }
@@ -188,27 +189,68 @@ namespace Main
             s.ChartType = SeriesChartType.Doughnut;
             s.IsValueShownAsLabel = true;
 
+            int broken = 0;
+            int normal = 0;
+
             using (OracleConnection conn = DB.GetConn())
             {
                 conn.Open();
 
-                int broken = Convert.ToInt32(
-                    new OracleCommand("SELECT COUNT(*) FROM charger WHERE status='고장'", conn)
-                    .ExecuteScalar());
+                string sql = @"
+                    SELECT c.status, COUNT(*)
+                    FROM rental r
+                    JOIN charger c ON r.charger_id = c.charger_id
+                    WHERE r.rental_time BETWEEN :startDate AND :endDate
+                    GROUP BY c.status
+                ";
 
-                int total = Convert.ToInt32(
-                    new OracleCommand("SELECT COUNT(*) FROM charger", conn)
-                    .ExecuteScalar());
+                using (OracleCommand cmd = new OracleCommand(sql, conn))
+                {
+                    cmd.Parameters.Add(":startDate", currentStart);
+                    cmd.Parameters.Add(":endDate", currentEnd);
 
-                s.Points.AddXY("고장", broken);
-                s.Points.AddXY("정상", total - broken);
+                    using (OracleDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            if (dr.GetString(0) == "고장") broken += dr.GetInt32(1);
+                            else normal += dr.GetInt32(1);
+                        }
+                    }
+                }
             }
+
+            int total = broken + normal;
+            if (total == 0) return;
+
+            double brokenRate = broken * 100.0 / total;
+            double normalRate = normal * 100.0 / total;
+
+            DataPoint pBroken = new DataPoint
+            {
+                YValues = new double[] { broken },
+                Label = broken == 0 ? "" : $"{brokenRate:0.#}%",
+                LegendText = $"고장 ({broken}건)",
+                Color = Color.LightCoral
+            };
+
+            DataPoint pNormal = new DataPoint
+            {
+                YValues = new double[] { normal },
+                Label = normal == 0 ? "" : $"{normalRate:0.#}%",
+                LegendText = $"정상 ({normal}건)",
+                Color = Color.LightGreen
+            };
+
+            if (broken > 0) s.Points.Add(pBroken);
+            if (normal > 0) s.Points.Add(pNormal);
+
+            s.Font = new Font("맑은 고딕", 14, FontStyle.Bold);
+            chartStats.Legends[0].Font = new Font("맑은 고딕", 12, FontStyle.Regular);
 
             foreach (DataPoint p in s.Points)
             {
-                if (p.AxisLabel == "정상") p.Color = Color.LightGreen;
-                if (p.AxisLabel == "고장") p.Color = Color.LightCoral;
-                p.Font = new Font("맑은 고딕", 16, FontStyle.Bold);
+                p.Font = new Font("맑은 고딕", 14, FontStyle.Bold);
                 p.LabelForeColor = Color.Black;
             }
 
@@ -222,6 +264,12 @@ namespace Main
             chartStats.Legends[0].Enabled = true;
 
             var ca = chartStats.ChartAreas[0];
+
+            // 축 설명
+            ca.AxisX.Title = "대여 번호";
+            ca.AxisY.Title = "요금 (원)";
+
+            // 축 색상
             ca.AxisX.LineColor = Color.FromArgb(80, Color.Gray);
             ca.AxisY.LineColor = Color.FromArgb(80, Color.Gray);
             ca.AxisX.MajorGrid.LineColor = Color.FromArgb(50, Color.LightGray);
@@ -229,7 +277,7 @@ namespace Main
 
             Series s = new Series("요금");
             s.ChartType = SeriesChartType.Column;
-            s.IsValueShownAsLabel = true;
+            s.IsValueShownAsLabel = false;
 
             s.Color = Color.LightSkyBlue;
 
@@ -241,27 +289,24 @@ namespace Main
                     SELECT rental_id, charge_amount
                     FROM rental
                     WHERE charge_amount IS NOT NULL
+                      AND return_time BETWEEN :startDate AND :endDate
                     ORDER BY rental_id
                 ";
 
                 using (OracleCommand cmd = new OracleCommand(sql, conn))
-                using (OracleDataReader dr = cmd.ExecuteReader())
                 {
-                    while (dr.Read())
+                    cmd.Parameters.Add(":startDate", currentStart);
+                    cmd.Parameters.Add(":endDate", currentEnd);
+
+                    using (OracleDataReader dr = cmd.ExecuteReader())
                     {
-                        int rentalId = dr.GetInt32(0);
-                        double amount = dr.GetDouble(1);
-                        s.Points.AddXY(rentalId, amount);
+                        while (dr.Read())
+                        {
+                            s.Points.AddXY(dr.GetInt32(0), dr.GetDouble(1));
+                        }
                     }
                 }
             }
-
-            foreach (DataPoint p in s.Points)
-            {
-                p.Font = new Font("맑은 고딕", 9, FontStyle.Bold);
-                p.LabelForeColor = Color.Black;
-            }
-
             chartStats.Series.Add(s);
         }
 
@@ -275,34 +320,65 @@ namespace Main
             s.ChartType = SeriesChartType.Pie;
             s.IsValueShownAsLabel = true;
 
+            int normal = 0;
+            int fast = 0;
+
             using (OracleConnection conn = DB.GetConn())
             {
                 conn.Open();
 
                 string sql = @"
-                    SELECT c.charger_type, COUNT(*) AS cnt
+                    SELECT c.charger_type, COUNT(*)
                     FROM rental r
                     JOIN charger c ON r.charger_id = c.charger_id
+                    WHERE r.rental_time BETWEEN :startDate AND :endDate
                     GROUP BY c.charger_type
                 ";
 
                 using (OracleCommand cmd = new OracleCommand(sql, conn))
-                using (OracleDataReader dr = cmd.ExecuteReader())
                 {
-                    while (dr.Read())
+                    cmd.Parameters.Add(":startDate", currentStart);
+                    cmd.Parameters.Add(":endDate", currentEnd);
+
+                    using (OracleDataReader dr = cmd.ExecuteReader())
                     {
-                        string type = dr.GetString(0);
-                        int cnt = dr.GetInt32(1);
-                        s.Points.AddXY(type, cnt);
+                        while (dr.Read())
+                        {
+                            if (dr.GetString(0).Contains("일반")) normal += dr.GetInt32(1);
+                            else if (dr.GetString(0).Contains("고속")) fast += dr.GetInt32(1);
+                        }
                     }
                 }
             }
 
+            int total = normal + fast;
+            if (total == 0) return;
+
+            double nRate = normal * 100.0 / total;
+            double fRate = fast * 100.0 / total;
+
+            s.Points.Add(new DataPoint
+            {
+                YValues = new double[] { normal },
+                Label = normal == 0 ? "" : $"{nRate:0.#}%",
+                LegendText = $"일반 ({normal}회)",
+                Color = Color.LightSkyBlue
+            });
+
+            s.Points.Add(new DataPoint
+            {
+                YValues = new double[] { fast },
+                Label = fast == 0 ? "" : $"{fRate:0.#}%",
+                LegendText = $"고속 ({fast}회)",
+                Color = Color.LightCoral
+            });
+
+            s.Font = new Font("맑은 고딕", 14, FontStyle.Bold);
+            chartStats.Legends[0].Font = new Font("맑은 고딕", 12, FontStyle.Regular);
+
             foreach (DataPoint p in s.Points)
             {
-                if (p.AxisLabel == "일반") p.Color = Color.LightSkyBlue;
-                if (p.AxisLabel == "고속") p.Color = Color.LightCoral;
-                p.Font = new Font("맑은 고딕", 16, FontStyle.Bold);
+                p.Font = new Font("맑은 고딕", 14, FontStyle.Bold);
                 p.LabelForeColor = Color.Black;
             }
 
@@ -314,6 +390,17 @@ namespace Main
         {
             new MainForm().Show();
             this.Close();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            currentStart = dtpStart.Value.Date;
+            currentEnd = dtpEnd.Value.Date.AddDays(1).AddSeconds(-1);
+
+            LoadSummaryStats(currentStart, currentEnd);
+
+            // 기본 그래프 자동 표시
+            btnAvgRent_Click(null, null);
         }
     }
 }

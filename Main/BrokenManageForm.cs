@@ -10,6 +10,9 @@ namespace Main
         private int selectedBrokenId = -1;
         private int selectedMemberId = -1;
 
+        private DateTime currentStart;
+        private DateTime currentEnd;
+
         public BrokenManageForm()
         {
             InitializeComponent();
@@ -22,16 +25,37 @@ namespace Main
             cmbFaultStatus.Items.Add("정상");   // 처리 완료
             cmbFaultStatus.Items.Add("폐기");   // 처리 완료
 
+            // 필터링
+            cbStatus.Items.Clear();
+            cbStatus.Items.Add("전체");
+            cbStatus.Items.Add("지연");
+            cbStatus.Items.Add("정상");
+            cbStatus.Items.Add("폐기");
+            cbStatus.SelectedIndex = 0;
+
+            // 필터 기본값
+            currentStart = DateTime.Today;
+            currentEnd = DateTime.Today.AddDays(1).AddSeconds(-1);
+
+            dtpStart.Value = currentStart;
+            dtpEnd.Value = currentStart;
+
             LoadBrokenList();
             LoadStatusCounts();
 
             dgvBroken.CellClick += dgvBroken_CellClick;
+            cbStatus.SelectedIndexChanged += cbStatus_SelectedIndexChanged;
+
+        }
+        private void LoadBrokenList()
+        {
+            LoadBrokenList(null, null, "전체");
         }
 
         // ===========================================================
         // 1) 고장 신고 전체 조회
         // ===========================================================
-        private void LoadBrokenList()
+        private void LoadBrokenList(DateTime? start, DateTime? end, string status)
         {
             using (OracleConnection conn = DB.GetConn())
             {
@@ -48,10 +72,31 @@ namespace Main
                         TO_CHAR(b.report_time, 'YYYY-MM-DD HH24:MI') AS report_time
                     FROM broken b
                     LEFT JOIN rental r ON b.rental_id = r.rental_id
-                    ORDER BY b.broken_id DESC
+                    WHERE 1=1
                 ";
 
-                OracleDataAdapter da = new OracleDataAdapter(sql, conn);
+                OracleCommand cmd = new OracleCommand();
+                cmd.Connection = conn;
+
+                // 날짜 필터
+                if (start.HasValue && end.HasValue)
+                {
+                    sql += " AND b.report_time BETWEEN :startDate AND :endDate";
+                    cmd.Parameters.Add(":startDate", start.Value);
+                    cmd.Parameters.Add(":endDate", end.Value);
+                }
+
+                // 상태 필터
+                if (!string.IsNullOrEmpty(status) && status != "전체")
+                {
+                    sql += " AND b.repair_status = :status";
+                    cmd.Parameters.Add(":status", status);
+                }
+
+                sql += " ORDER BY b.broken_id DESC";
+                cmd.CommandText = sql;
+
+                OracleDataAdapter da = new OracleDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
@@ -116,11 +161,27 @@ namespace Main
 
             DataGridViewRow row = dgvBroken.Rows[e.RowIndex];
 
-            selectedBrokenId = Convert.ToInt32(row.Cells["BROKEN_ID"].Value);
-            txtChargerId.Text = row.Cells["CHARGER_ID"].Value?.ToString() ?? "";
+            object brokenVal = row.Cells["BROKEN_ID"].Value;
+            selectedBrokenId = (brokenVal == DBNull.Value || brokenVal == null)
+                ? -1
+                : Convert.ToInt32(brokenVal);
 
-            selectedMemberId = Convert.ToInt32(row.Cells["MEMBER_ID"].Value);
-            txtMemberId.Text = selectedMemberId == 0 ? "" : selectedMemberId.ToString();
+            object chargerVal = row.Cells["CHARGER_ID"].Value;
+            txtChargerId.Text = (chargerVal == DBNull.Value || chargerVal == null)
+                ? ""
+                : chargerVal.ToString();
+
+            object memberVal = row.Cells["MEMBER_ID"].Value;
+            if (memberVal == DBNull.Value || memberVal == null)
+            {
+                selectedMemberId = 0;
+                txtMemberId.Text = "";
+            }
+            else
+            {
+                selectedMemberId = Convert.ToInt32(memberVal);
+                txtMemberId.Text = selectedMemberId.ToString();
+            }
 
             cmbFaultType.Text = row.Cells["SYMPTOM"].Value?.ToString() ?? "";
             txtFaultText.Text = row.Cells["REPAIR_DETAIL"].Value?.ToString() ?? "";
@@ -257,6 +318,20 @@ namespace Main
             cmbFaultStatus.SelectedIndex = -1;
             txtFaultText.Clear();
             numMinusCredibility.Value = 0;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            currentStart = dtpStart.Value.Date;
+            currentEnd = dtpEnd.Value.Date.AddDays(1).AddSeconds(-1);
+
+            LoadBrokenList(currentStart, currentEnd, cbStatus.Text);
+        }
+
+        private void cbStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string status = cbStatus.Text;
+            LoadBrokenList(currentStart, currentEnd, cbStatus.Text);
         }
     }
 }
